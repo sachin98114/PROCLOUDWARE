@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        const raw = [
+            {
+                name: "Saajan",
+                stamina: 4,
+                response: 4,
+                focusOnGame: 5,
+                clean: 5,
+                stressHandler: 4,
+
+            },
+            {
+                name: "Sunil",
+                stamina: 4,
+                response: 3,
+                focusOnGame: 5,
+                clean: 5,
+                stressHandler: 4,
+
+            },
+            {
+                name: "Amit",
+                stamina: 4,
+                response: 3,
+                focusOnGame: 3,
+                clean: 4,
+                stressHandler: 4,
+
+            },
+            {
+                name: "Manish",
+                stamina: 3,
+                response: 4,
+                focusOnGame: 4,
+                clean: 4,
+                stressHandler: 4,
+            },
+            {
+                name: "Dinesh",
+                stamina: 4,
+                response: 3,
+                focusOnGame: 4,
+                clean: 5,
+                stressHandler: 4,
+
+            },
+            {
+                name: "Ankur",
+                stamina: 4,
+                response: 4,
+                focusOnGame: 4,
+                clean: 5,
+                stressHandler: 4,
+
+
+            },
+            {
+                name: "Love",
+                stamina: 3,
+                response: 2,
+                focusOnGame: 4,
+                clean: 4,
+                stressHandler: 2,
+
+            },
+            {
+                name: "Arun",
+                stamina: 3,
+                response: 4,
+                focusOnGame: 3,
+                clean: 4,
+                stressHandler: 4,
+           }
+        ];
+// var t=obj.sections.map((val)=>{
+//    if(val.enabled==true){
+//     val.subSections.filter((ral) => arr.push(ral))
+     
+//     }
+// })
+var arr=[];
+var a=0;
+var total=raw.forEach((val)=>{
+   if(val.name=="Saajan"){  
+    a=a+val.stamina+val.response+val.focusOnGame+val.clean+val.stressHandler;
+   arr.push(a);
+   raw[0].total=a
+}
+})
+console.log(a);
+
+
+var b=0;
+var total=raw.forEach((val)=>{
+   if(val.name=="Sunil"){
+       b=b+val.stamina+val.response+val.focusOnGame+val.clean+val.stressHandler;
+       arr.push(b);
+       raw[1].total=b;
+    }
+})
+console.log(b);
+  
+var c=0;
+var total=raw.forEach((val)=>{
+   if(val.name=="Amit"){
+       c=c+val.stamina+val.response+val.focusOnGame+val.clean+val.stressHandler;
+       arr.push(c);
+       raw[2].total=c;
+    }
+})
+console.log(c);
+
+var d=0;
+var total=raw.forEach((val)=>{
+   if(val.name=="Manish"){
+       d=d+val.stamina+val.response+val.focusOnGame+val.clean+val.stressHandler;
+       arr.push(d);
+       raw[3].total=d;
+    }
+})
+console.log(d);
+
+var e=0;
+var total=raw.forEach((val)=>{
+   if(val.name=="Dinesh"){
+       e=e+val.stamina+val.response+val.focusOnGame+val.clean+val.stressHandler;
+       arr.push(e);
+       raw[4].total=e;
+    }
+})
+console.log(e);
+
+var f=0;
+var total=raw.forEach((val)=>{
+   if(val.name=="Ankur"){
+       f=f+val.stamina+val.response+val.focusOnGame+val.clean+val.stressHandler;
+       arr.push(f);
+       raw[5].total=f;
+    }
+})
+console.log(f);
+
+var g=0;
+var total=raw.forEach((val)=>{
+   if(val.name=="Love"){
+       g=g+val.stamina+val.response+val.focusOnGame+val.clean+val.stressHandler;
+       arr.push(g);
+       raw[6].total=g;
+    }
+})
+console.log(g);
+
+var h=0;
+var total=raw.forEach((val)=>{
+   if(val.name=="Arun"){
+       h=h+val.stamina+val.response+val.focusOnGame+val.clean+val.stressHandler;
+       arr.push(h);
+       raw[7].total=h;
+    }
+})
+console.log(h);
+console.log(raw)
+console.log(arr);
+var abc=[];
+var def=[];
+console.log(abc);
+console.log(def);
+
+
+for(i=0;i<arr.length;i++){
+    if(i%2==0){
+     abc.push(raw[i])
+    }else{
+     def.push(raw[i])
+    }
+}
+    </script>
+</body>
+</html>

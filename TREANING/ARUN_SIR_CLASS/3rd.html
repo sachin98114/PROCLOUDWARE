@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    class Manager {
+    admin;
+    #hr;
+    tl;
+    constructor(admin, hr, tl) {
+        this.admin = admin;
+        this.tl = tl;
+        this.#hr = hr;
+    }
+}
+    class Employee extends Manager {
+    empId;
+    department;
+    designation;
+    constructor(admin, hr, tl, empId, department, designation ) {
+        super(admin, hr, tl);
+        this.empId = empId;
+        this.department = department;
+        this.designation = designation;
+    }
+   
+}
+const empObj = new Employee(true, "gur", "true", 1414, 'IT', 'developer');
+
+console.log(empObj);
+   </script> 
+</body>
+</html>

@@ -1,0 +1,59 @@
+.container .card2 {
+  border-radius: 20px;
+  color: white;
+  padding: 20px;
+}
+
+@media screen and (max-width: 200px) {
+  .card4 {
+    border-radius: 40px;
+  }
+}
+
+.container {
+  border: 3px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .card1 {
+  height: 200px;
+  width: 100px;
+  border: 3px solid;
+  background-color: black;
+  border: 3px solid color_2;
+}
+
+.container .card2 {
+  height: 200px;
+  width: 100px;
+  border: 3px solid;
+  background-color: green;
+  border: 3px solid color_3;
+}
+
+.container .card3 {
+  height: 200px;
+  width: 100px;
+  border: 3px solid;
+  background-color: red;
+  border: 3px solid green;
+}
+
+.container .card4 {
+  height: 200px;
+  width: 100px;
+  border: 3px solid;
+  background-color: red;
+  border: 3px solid green;
+}
+
+.container .card5 {
+  height: 200px;
+  width: 100px;
+  border: 3px solid;
+  background-color: red;
+  border: 3px solid green;
+}
+/*# sourceMappingURL=sass_1.css.map */

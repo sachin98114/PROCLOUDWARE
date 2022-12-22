@@ -1,0 +1,19 @@
+#smalllogo{
+    position: relative;
+    left: -28px;
+    height: 5rem;
+    /* width: 0.4rem; */
+    top: -40px;
+    border-radius: 20px;
+    /* background-color: brown; */
+}
+.card{
+border-radius: 20px;
+background-color: aliceblue;
+/* justify-content: space-around; */
+margin: 0 auto;
+}
+#myBtn{
+    border: none;
+    background-color: aliceblue;
+}

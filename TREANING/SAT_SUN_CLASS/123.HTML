@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="one" type="text" onkeyup="fun()">
+     <button id="qwert" onclick="gun()">click</button>
+     <button id="qwe" onclick="tun()">click</button>
+
+<script>
+         var s=document.getElementById("qwe");
+         var t=document.getElementById("qwert");
+         s.style.display="none";
+        // var val=document.getElementById("one");
+
+        function gun(){
+            document.getElementById("one").type="password"; 
+            s.style.display="block";
+            t.style.display="none";
+        }
+        function tun(){
+            document.getElementById("one").type="text"; 
+        }
+
+
+</script>
+
+</body>
+</html>

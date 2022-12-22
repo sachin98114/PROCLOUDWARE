@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function exp(name , age, company){
+            this.name=name;
+            this.age=age;
+            this.company=company;
+        }
+
+        exp.prototype.display=function(){
+            alert(this.name+"   " +this.company)
+        }
+        var exp1=new exp("ABC" ,"30" ,"PRO");
+            exp1.display();
+            console.log(exp);
+            console.log(exp1);
+
+    </script>
+</body>
+</html>

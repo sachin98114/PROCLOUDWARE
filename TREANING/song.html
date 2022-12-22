@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAVI DJ</title>
+  <link rel="stylesheet" href="">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    .container {
+      justify-content: center;
+      display: flex;
+      margin-top: 30px;
+    }
+
+    li {
+      margin-left: 150px;
+      font-size: 20px;
+      font-style: initial;
+
+    }
+
+    img {
+      height: 200px;
+      width: 200px;
+
+
+    }
+
+    button {
+      border-radius: 10px;
+      ;
+    }
+  </style>
+</head>
+<div class="container">
+  <img class="img" src="himanshu.jpg" alt="sorry">
+</div>
+<div class="ul" id="ul">
+  <ul>
+    <li class="name" id="name"> </li>
+    <li id="age" class="age"></li>
+    <li id="class" class="class"></li>
+    <li id="sec" class="sec"></li>
+    <li id="school" class="school"></li>
+    <li id="state" class="state"></li>
+  </ul>
+</div>
+<button onclick="fun()">NEXT</button>
+
+<body>
+  <script>
+    var data = [
+      {
+        name: "Name : Himanshu Kumar",
+        roll: 49,
+        age: "Age : 12",
+        class: "Class :5",
+        sec: "Sec :C",
+        school: "School : R.D.S.O, LUCKNOW",
+        state: "State : uttar pradesh"
+        // img: "photo.jpg"
+
+      },
+      {
+        name: "Name : Yogesh Kumar",
+        roll: "Age : 20",
+        age: "Age : 9",
+        class: "Class: 5",
+        sec: "Sec :C",
+        school: "School : R.D.S.O, LUCKNOW",
+        state: "State : uttar pradesh"
+        // img:"",
+
+      },
+      {
+        name: "Name : Ankit Kumar",
+        roll: 22,
+        age: "Age : 12",
+        class: "Class: 5",
+        sec: "Sec :C",
+        school: "School : R.D.S.O, LUCKNOW",
+        state: "State : uttar pradesh"
+        // img:"",
+
+      }, {
+        name: "Name : Rupak Kumar",
+        roll: 23,
+        age: "Age : 12",
+        class: "Class: 5",
+        sec: "Sec :C",
+        school: "School : R.D.S.O, LUCKNOW",
+        state: "State : uttar pradesh"
+
+      }
+    ]
+
+
+    var nam = document.getElementById("name");
+    nam.innerText = data[0].name;
+    document.body.appendChild(nam);
+
+    var age = document.getElementById("age");
+    age.innerText = data[0].age;
+    document.body.appendChild(age);
+
+    var clas = document.getElementById("class");
+    clas.innerText = data[0].class;
+    document.body.appendChild(clas);
+
+    var sec = document.getElementById("sec");
+    sec.innerText = data[0].sec;
+    document.body.appendChild(sec);
+
+
+    var school = document.getElementById("school");
+    school.innerText = data[0].school;
+    document.body.appendChild(school);
+
+    var stat = document.getElementById("state");
+    stat.innerText = data[0].state;
+    document.body.appendChild(stat);
+
+    var i = 0
+    function fun() {
+      i++;
+
+      var nam = document.getElementById("name");
+      nam.innerText = data[i].name;
+      document.body.appendChild(nam);
+
+      var age = document.getElementById("age");
+      age.innerText = data[i].age;
+      document.body.appendChild(age);
+
+      var clas = document.getElementById("class");
+      clas.innerText = data[i].class;
+      document.body.appendChild(clas);
+
+      var sec = document.getElementById("sec");
+      sec.innerText = data[i].sec;
+      document.body.appendChild(sec);
+
+
+      var school = document.getElementById("school");
+      school.innerText = data[i].school;
+      document.body.appendChild(school);
+
+      var stat = document.getElementById("state");
+      stat.innerText = data[i].state;
+      document.body.appendChild(stat);
+
+      var img = document.getElementById("img");
+      stat.src = data[i].img;
+      document.body.appendChild(stat);
+
+      if (i >= data.length - 1) {
+        i = 0;
+      }
+    }
+
+
+  </script>
+</body>
+
+</html>

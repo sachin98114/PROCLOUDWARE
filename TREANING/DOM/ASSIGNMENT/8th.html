@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+   
+        <label for="">First Name</label>
+        <input
+          id="fname"
+          type="text"
+          placeholder="Enter text"
+          onblur="getVal()"
+          required
+        />
+        <br />
+        <br />
+        <label for="">Last Name</label>
+        <input
+          id="lname"
+          type="text"
+          placeholder="Enter text"
+          onblur="getcal()"
+          required
+        />
+
+        <br />
+        <br />
+        <h3>Gender</h3>
+
+        <input type="radio" name="rd" class="rd" />
+        <label for="rd">Male</label>
+        <br />
+        <input type="radio" name="rd" class="rd" />
+        <label for="rd">Female</label>
+
+        <br />
+        <br />
+        <span>Select State</span>
+        <select name="State" id="State" required>
+          <option value="">State</option>
+          <option value="">BIHAR</option>
+          <option value="">DELHI</option>
+          <option value="">PUNJAB</option>
+          <option value="">UDISHA</option>
+          <option value="">PANJI</option>
+        </select>
+
+        <br />
+        <br />
+
+        <input id="accept" type="checkbox" required  />
+        <span>I Accept</span>
+
+        <br /><br />
+        <br />
+      
+        <button id="submit" onclick="submit()">SUBMIT</button>
+    </form>
+    
+    <script>
+      const val = document.getElementById("fname").value;
+      const cal = document.getElementById("lname").value;
+      const gender = document.getElementsByClassName("rd");
+      // const accept=document.getElementById("accept").checked;
+      
+      function getVal() {
+        const val = document.getElementById("fname").value;
+        // console.log(val);
+        if (!isNaN(parseInt(val))) {
+          document.getElementById("fname").style.backgroundColor = "red";
+        } else {
+          document.getElementById("fname").style.backgroundColor = "";
+        }
+        if (val == "") {
+          alert("Input Your First Name");
+        }
+      }
+
+      function getcal() {
+        const cal = document.getElementById("lname").value;
+        if (!isNaN(parseInt(cal))) {
+          document.getElementById("lname").style.backgroundColor = "red";
+        } else {
+          document.getElementById("lname").style.backgroundColor = "";
+        }
+        if (cal == "") {
+          alert("Input Your Last Name");
+        }
+      }
+
+
+      function submit() {
+        if (gender[0].checked == false && gender[1].checked == false) {
+          alert("Please Select the gender");
+
+        }
+      
+      }
+
+      // function submit(){
+      //   if(accept==false){
+      //   alert("Yuvraj singh");
+      //  }
+      // }
+
+
+
+    </script>
+  </body>
+</html>

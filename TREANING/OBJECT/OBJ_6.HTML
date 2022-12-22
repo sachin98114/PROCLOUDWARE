@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//  var s1 = {
+//  name: 'ankur',
+//  age: 67,
+//  marks: 100,
+//     }
+//  console.log(s1.age);
+  
+
+// // // // factory method
+//  function s2 (name,age,marks){
+//     return{
+//        Name:name,
+//        Age:age,
+//        Marks:marks,
+//     }
+//  }
+//  var w=s2("sachin",21,87);
+//  var p=s2("shashank",18,98);
+
+//  console.log(w);
+//  console.log(p);
+
+
+// constructor function never return any thing
+//  function study (name,age,marks){
+    
+//        this.Name=name;
+//        this.Age=age;
+//        this.Marks=marks;
+//  }
+
+//  var w= new study ("sachin",21,87);
+// console.log(w);
+function b(n) {
+            //debugger;
+            if (n == 0){
+                return 1;
+            }
+            else {
+               
+             
+              return  b(n - 1) * n;
+            }
+
+        }
+      var x=b(6)
+      console.log(x);
+
+
+
+    </script>
+</body>
+</html>

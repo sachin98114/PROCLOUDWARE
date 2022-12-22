@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var day = [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ];
+
+      var enter = prompt("Enter a day");
+      var index1 = day.findIndex((day) => day === enter);
+      var p = index1 + 1;
+
+      if (enter == "Monday") {
+        for (i = p; i < day.length; i++) {
+          document.write(day[i]);
+        }
+        var index = day.findIndex((day) => day === enter);
+        for (j = 0; j <= index; j++) {
+          document.write(day[j]);
+        }
+      }
+
+      if (enter == "Tuesday") {
+        for (i = p; i < day.length; i++) {
+          document.write(day[i]);
+        }
+        var index = day.findIndex((day) => day === enter);
+        for (j = 0; j <= index; j++) {
+          document.write(day[j]);
+        }
+      }
+
+      if (enter == "Wednesday") {
+        for (i = p; i < day.length; i++) {
+          document.write(day[i]);
+        }
+        var index = day.findIndex((day) => day === enter);
+        for (j = 0; j <= index; j++) {
+          document.write(day[j]);
+        }
+      }
+
+      if (enter == "Thursday") {
+        for (i = p; i < day.length; i++) {
+          document.write(day[i]);
+        }
+        var index = day.findIndex((day) => day === enter);
+        for (j = 0; j < index; j++) {
+          document.write(day[j]);
+        }
+      }
+
+      if (enter == "Friday") {
+        for (i = p; i < day.length; i++) {
+          document.write(day[i]);
+        }
+        var index = day.findIndex((day) => day === enter);
+        for (j = 0; j <= index; j++) {
+          document.write(day[j]);
+        }
+      }
+
+      if (enter == "Saturday") {
+        for (i = p; i < day.length; i++) {
+          document.write(day[i]);
+        }
+        var index = day.findIndex((day) => day === enter);
+        for (j = 0; j <= index; j++) {
+          document.write(day[j]);
+        }
+      }
+
+      if (enter == "Sunday") {
+        for (i = p; i < day.length; i++) {
+          // document.write(day[i]);
+        }
+        var index = day.findIndex((day) => day === enter);
+        for (j = 0; j < index; j++) {
+          document.write(day[j]);
+        }
+      }
+    </script>
+  </body>
+</html>

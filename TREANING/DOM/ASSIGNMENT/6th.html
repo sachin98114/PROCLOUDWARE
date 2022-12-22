@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Image Loop</title>
+  </head>
+  <body>
+    <button id="slider-previous" onclick="prev()">Previous</button>
+    <img id="imgsrc" src="car3.jpg" alt="no" style="width:300px;height:300px">
+    <button id="slider-next" onclick="next()"> next</button>
+    
+    </section>
+    <script>
+      var images = [
+
+        "car3_t.png",
+        "car4.jpg",
+        "car5.jpg",
+        "car6.jpg",
+      ];
+     
+      var store = document.getElementById("imgsrc");
+
+        let i=0;
+        function next(){
+          debugger;
+            i++;
+        // if(i>=images.length){
+        //     i=0;
+        //     store.src = images[i];
+        // }
+        store.src = images[i];
+      }
+
+      function prev(){
+        i--;
+        if(i<0){
+            i=images.length-1;
+            store.src = images[i]
+        }
+        store.src = images[i]
+      }
+    // </script>
+  </body>
+</html>

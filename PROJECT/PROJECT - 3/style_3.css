@@ -1,0 +1,74 @@
+.main{
+  width: 1000px;
+/* border: 1px solid green; */
+padding: 10px;
+margin: 20px;
+display: flex;
+max-height: 600px;
+border-radius: 20px;
+margin-left: 180px;
+
+
+}
+.left {
+width: 300px;
+/* border: 1px solid green; */
+padding: 50px;
+/* margin: 20px; */
+background-color:whitesmoke;
+max-height: 700px;
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+}
+.right{
+width: 700px;
+/* border: 1px solid green; */
+padding: 50px;
+/* margin: 20px; */
+background-color: darkslategrey;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+
+.frame {
+width: 5px;
+border: 10px solid greenyellow;
+padding: 40px;
+/* margin: 0px auto; */
+margin-top: -70px;
+border-radius: 45px;
+
+background-image: url("IMG_20210505_063422.jpg");
+background-size: cover;
+}
+
+.name {
+margin-left: 0px;
+font-size: xx-large;
+}
+.call {
+display: flex;
+
+margin-left: 0%;
+justify-content: space-evenly;
+}
+.exp{
+margin-top: -10%;
+margin-left: -50px;
+color: green;
+
+}
+.details{
+column-gap: 80px;
+
+display: flex;
+margin-right: 12px;
+margin-left: 15px;
+
+
+
+}
+.textbox{
+background-color: white;
+display: inline;
+}

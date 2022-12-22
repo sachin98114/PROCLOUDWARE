@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Teacher {
+        name;
+        #clas;
+        roll;
+        constructor(name, clas, roll) {
+          this.name = name;
+          this.#clas = clas;
+          this.roll = roll;
+        }
+        msg() {
+          console.log("hii", this.#clas);
+        }
+        get myClas() {
+          return this.#clas;
+        }
+
+        info() {
+          this.msg();
+          console.log(this.name);
+        }
+      }
+
+      class Student extends Teacher {
+        constructor(add, name, clas, roll) {
+          super(name, clas, roll);
+          this.add = add;
+        }
+
+        mng() {
+          this.msg();
+          console.log("hello jii.....", this.myClas);
+        }
+      }
+      // var s= new stu("sachin" ,"B.tech" ,"1834577", "rampur");
+      var s = new Student("1834577", "sachin", "12", "1413278");
+      s.msg();
+    </script>
+  </body>
+</html>

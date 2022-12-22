@@ -1,0 +1,31 @@
+<body>
+
+    <h2>JavaScript Objects</h2>
+    <p>Display object properties:</p>
+    
+    <p id="demo"></p>
+    
+    <script>
+    var person = [
+    { firstName: "Joban", lastNmae: "singh", fullName: "Singh Joban" },
+    { firstName: "Munish", lastNmae: "sharma", fullName: "sharma Munish" },
+    { firstName: "Shajan", lastNmae: "Dhawan", fullName: " Dhawan Sajan" },
+    { firstName: "Dinesh", lastNmae: "Kapoor", fullName: "Kapoor Dinesh" },
+    { firstName: "sachin", lastNmae: "kumar", fullName: "kumar sachin" },
+  ];
+
+  
+  
+    console.log(JSON.stringify(person));
+    for (var i = 0; i < person.length; i++) {
+    var object = person[i];
+    for (var property in object) {
+    var s=property + '=' + object[property];
+    document.write( s +"</br>");
+    }
+    }
+    </script>
+    
+    </body>
+    </html>
+    

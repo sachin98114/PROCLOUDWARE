@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var enter = prompt("Enter a number");
+      var t = Number(enter);
+      var x = t - 10;
+      var y = t - 10;
+      if (enter % 2 == !0) {
+        for (i =t; i >= x; i = i - 2) {
+          document.write(i + "\n");
+        }
+      } else if (enter % 2 == 0) {
+        for (j = t; j >= y; j--) {
+          if (j % 2 == 0) {
+            document.write(j + "\n");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

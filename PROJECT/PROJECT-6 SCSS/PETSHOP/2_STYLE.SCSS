@@ -1,0 +1,202 @@
+$colororange:orange;
+$colorblack:black;
+
+
+
+
+.topbgimg{
+    height: 71px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("bg-search-form2.gif");
+     
+
+.logogif{
+    position: relative;
+    margin-left: 300px;
+}
+.homeabout{
+    display: flex;
+    gap: 60px;
+    position: absolute;
+    font-size: medium;
+    margin-top: -65px;
+    margin-left: 600px;
+    /* background-color: orange; */
+   list-style-type: none;
+}
+.menu{
+    position: absolute;
+    margin-top: 37px;
+}
+}
+
+.dogjpg{
+   /* border: 1px solid black; */
+   width: 89%;
+   height: 500px;
+//  padding: 60px;
+//    margin-left: 10px;
+   background-image: url("dog.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.box{
+    width: 100%;
+    // border: 5px solid red;
+    display: flex;
+    height: 550px;
+
+    .midleft{
+        margin-top: 100px;
+        margin-left: 160px;
+        width: 45%;
+        // border: 5px solid red; 
+    }
+    .midcattext{
+        // border: 5px solid red;
+        display: flex; 
+    }
+    .midbird{
+        // border: 5px solid red;
+        display: flex; 
+        
+    }
+    p{
+        font-size: small;
+        word-spacing: 3px;
+        text-decoration: none;
+        color: gray;
+    }
+    h5{
+        text-align: left;
+        font-style:oblique;
+    }
+    
+}
+.midrighttop{
+   
+    margin-top: 100px;
+    margin-left: 20px;
+    background-image: url("bg-search-form.gif");
+    background-size: cover;
+    width: 300px;
+    height: 70px;
+    border-radius: 7px;
+    .find{
+        position:absolute ;
+        margin-left: -190px;
+        margin-top: 11px;
+        display: inline-block;
+        color: gray;
+
+    }
+    .rd{
+        margin-left: 10px;
+    }
+
+    p{
+        display: inline-block;
+        color: white;
+        margin-left: 10px;
+        
+
+    }
+    
+}
+.midrightlow{
+   
+    margin-top: 10px;
+    margin-left: 20px;
+    // border: 3px solid blue;
+    height: 30px;
+
+.spng{
+    display: flex;
+    justify-content:space-around;
+    margin-top: -43px;
+}
+.spng p{
+    font-size: large;
+    color: $colorblack;
+}
+.midrightbottom{
+    margin-top: -17px;
+    // border: 3px solid blue;
+    height: 270px;
+    background-image: url("bg-sidebar-mid.gif");
+}
+#petacc{
+    background-color: $colororange;
+    width: 96%;
+    height: 27px;
+    margin-left:6px;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+}
+.card{
+    width: 100%;
+    height: 130px;
+    // border: 3px solid blue;
+    background-color: lightgrey; 
+    
+    
+}
+
+.orgA{
+    margin-top: 15px;
+    border-radius: 10px;
+    margin-left: 200px;
+ 
+}
+.catB{
+    margin-top: 15px;
+    border-radius: 10px;
+    margin-left: 20px;
+ 
+
+}
+.girlC{
+    margin-top: 15px;
+    border-radius: 10px;
+    margin-left: 20px;
+ 
+}
+.secondlast{
+    width: 100%;
+    height: 250px;
+    // border: 3px solid blue;
+    background-repeat: no-repeat; 
+    display: flex;
+    background-color: $colorblack;
+    
+.secondlast1{
+margin-left: 180px;
+}
+
+.secondlast4{
+margin-right: 200px;
+}
+.yellow1{
+    color: $colororange;
+    margin-top:-100px;
+}
+p{
+    color: white;
+}
+}
+.bottom{
+    width: 100%;
+    height: 40px;
+     border: 2px solid $colorblack;
+     background-color:$colororange ;
+    position: relative;
+    margin-top: -17px;
+
+    p{
+        
+        text-align: center;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            border: 2px solid red;
+            gap: 10px;
+            grid-template-areas: 
+            "a a ."
+            "a a b"
+            "c . ."
+            "d d ."
+            ;
+        }
+        .box1{
+            grid-area: a;
+        }
+        .box2{
+            grid-area: b;
+        }
+        .box3{
+            grid-area: c;
+        }
+        .box4{
+            grid-area: d;
+        }
+        .box{
+            padding: 20px;
+            border: 2px solid red;
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+    </div>
+    
+</body>
+</html>

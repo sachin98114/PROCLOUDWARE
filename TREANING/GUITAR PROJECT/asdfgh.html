@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="text" name="fname" value="" onkeypress="return lettersOnly(event)" />
+    <script>
+        function lettersOnly(h) {
+            // var charCode = event.keyCode;
+            if (h.keyCode==50  || h.key=="@")
+                return false;
+            else
+                return true;
+        } -->
+        <script>
+
+let arr=[
+    {
+      fname:"sachin",
+      lname:"kumar",
+      address:"bihar",
+},
+{
+      fname:"yuvraj",
+      lname:"singh",
+      address:"bihar",
+},
+{
+      fname:"rahul",
+      lname:"kumar",
+      address:"bihar",
+},
+{
+      fname:"arpan",
+      lname:"thakur",
+      address:"jammu",
+}
+];
+
+
+
+arr.forEach((element) => {
+  element.fullname = (element.fname+" "+element.lname)
+});
+console.log(arr)
+    </script>
+</body>
+</html>

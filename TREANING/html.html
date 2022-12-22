@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .container-fluid {
+            background-color: rgb(94, 176, 208);
+            border: 1px solid black;
+        }
+        .box {
+            background-color: white;
+        }
+        .container {
+            background-color: rgba(72, 195, 217, 0.948);
+        }
+        .card {
+            margin-top: 10px;
+        }
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 15px 25px;
+        }
+        .all-state {
+            color: white;
+            display: inline;
+            margin-left: 5px;
+        }
+        @media only screen and (max-width: 650px) {
+            .all-state {
+                display: block;
+            }
+            .footer {
+                justify-content: center;
+            }
+            .button {
+                height: 45px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid ">
+        <div class="container mt-5" style="border: 5px solid white; border-radius: 5px;">
+            <div class="box mt-4 " style="border-radius: 5px; border:3px solid goldenrod">
+                <h2 style="text-align: center; color: goldenrod; font-size:3em;">Start Your Auto Quote</h2>
+                <p style="text-align: center; color: rgb(11, 182, 239); font-size:2em;">it's quick and easy!</p>
+                <div class="containerbox d-flex justify-content-around flex-wrap">
+                    <div class="card text-white bg-primary " style="max-width: 18rem; width: 15rem; height: 300px;">
+                        <p class="head mt-3 ml-2">What is your Name?</p>
+                        <div class=" card-body  bg-white" style="margin: 4px; color: black;">
+                            <div class="hey">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <label for="fname">First Name</label>
+                                        <input type="text" id="fname" placeholder="Sc" style="width: 9rem;">
+                                    </div>
+                                    <div class="col-4">
+                                        <label for="mi">MI</label>
+                                        <input type="text" id="mi" style="width: 3rem;">
+                                    </div>
+                                </div>
+                                <div class="row mt-5">
+                                    <div class="col-8">
+                                        <label for="lname">First Name</label>
+                                        <input type="text" id="lname" placeholder="Ch" style="width: 9rem;">
+                                    </div>
+                                    <div class="col-4">
+                                        <label for="mi">Suffix</label>
+                                        <select name="" id="" style="width: 3rem;">
+                                            <option value="">None</option>
+                                            <option value="">all above</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-white bg-primary " style="max-width: 18rem; width: 15rem; height: 300px;">
+                        <p class="head mt-3 ml-2">When Were You Born?</p>
+                        <div class=" card-body  bg-white" style="margin: 4px; color: black;">
+                            <div class="row mt-5">
+                                <div class="col-12" style="text-align: center;">
+                                    <input type="date" id="date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-white bg-primary " style="max-width: 18rem; width: 15rem; height: 300px;">
+                        <p class="head mt-3 ml-2">What Is Your Address?</p>
+                        <div class=" card-body  bg-white" style="margin: 4px; color: black;">
+                            <div class="hey">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <label for="address">Address</label>
+                                        <input type="text" id="address" placeholder="h.no-1" style="width: 9rem;">
+                                    </div>
+                                    <div class="col-4">
+                                        <label for="apt">Apt/Unit</label>
+                                        <input type="text" id="apt" style="width: 3rem;">
+                                    </div>
+                                </div>
+                                <div class=" d-flex mt-5 ">
+                                    <div class="co">
+                                        <label for="city">city</label>
+                                        <input type="text" id="city" placeholder="Bihar" style="width: 7rem;">
+                                    </div>
+                                    <div class="com">
+                                        <label for="mi">State</label>
+                                        <select name="" id="" style="width: 3rem; height: 1.88rem;">
+                                            <option value="">Bihar</option>
+                                            <option value="">punjab</option>
+                                        </select>
+                                    </div>
+                                    <div class="con">
+                                        <label for="zip">ZIP</label>
+                                        <input type="number" id="zip" placeholder="11223" style="width: 2rem;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="img mt-1" style="text-align:center ;">
+                    <img src="quote_benefits.jpg"
+                        alt="sorry!" width="50%" height="auto" style="margin:4rem">
+                </div>
+            </div>
+                <div class="footer">
+                    <div>
+                        <img src="als_logo_trust_large.png"
+                            alt="Logo">
+                        <p class="all-state">Allstate@ secures your information</p>
+                    </div>
+                    <div id="button-parent">
+                        <img width="80px" height="25px" class="button"
+                            src="btn_continue_over.png"
+                            alt="no">
+                    </div>
+                </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

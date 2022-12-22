@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            height: 200px;
+            width: 200px;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="previous" onclick="pre()">previous</button>
+    <img id="img" src="" alt="sorry">
+    <button id="next" onclick="next()">next</button>
+
+
+    <script>
+        var arr = ["Snapchat-967076920.jpg", "Snapchat-7125668.jpg", "Snapchat-288582670.jpg", "Snapchat-332526641.jpg", "Snapchat-467393934.jpg", "Snapchat-526693624.jpg", "Snapchat-559540585.jpg", "Snapchat-607775947.jpg", "Snapchat-617329879.jpg", "Snapchat-645058594.jpg", "Snapchat-773591792.jpg", "Snapchat-794078626.jpg", "Snapchat-845400355.jpg", "Snapchat-1081023161.jpg"]
+
+        var img = document.getElementById("img");
+        i = 0;
+        img.src = arr[i];
+        function next() {
+            i++;
+            img.src = arr[i];
+
+            if (i >= arr.length - 1) {
+                i = 0
+            }
+        }
+
+        function pre() {
+            i--;
+            img.src = arr[i];
+
+            if (i < 0) {
+                i = arr.length - 2;
+                img.src = arr[i];
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

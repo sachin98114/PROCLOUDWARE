@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Furniter {
+        constructor(name, metirial, price) {
+          this.name = name;
+          this.metirial = metirial;
+          this.price = price;
+        }
+        msg() {
+          console.log(
+            "This " +
+              this.name +
+              " is made up good " +
+              this.metirial +
+              " & " +
+              "will cost you " +
+              this.price
+          );
+        }
+      }
+
+      var f1 = new Furniter("table", "wood", "1000");
+      console.log(f1);
+      f1.msg();
+    </script>
+  </body>
+</html>

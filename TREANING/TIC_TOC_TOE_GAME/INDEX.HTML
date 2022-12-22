@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+    .wrapper {
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .grid {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>WEL COME TIC TAC TOE GAME</h1>
+    <div class="wrapper">
+        <div class="grid item1"><input type="text" id="b1" onclick="handle_click_3(); checkwhowon();"/></div>
+        <div class="grid item2"><input type="text" id="b2" onclick="handle_click_4(); checkwhowon();"/></div>
+        <div class="grid item3"><input type="text" id="b3" onclick="handle_click_5(); checkwhowon();"/></div>
+        <!-- <br /><br /> -->
+        <div class="grid item4"> <input type="text" id="b4" onclick="handle_click_6(); checkwhowon();"/></div>
+        <div class="grid item5"> <input type="text" id="b5" onclick="handle_click_7(); checkwhowon();"/></div>
+        <div class="grid item6"> <input type="text" id="b6" onclick="handle_click_8(); checkwhowon();"/></div>
+        <!-- <br /><br /> -->
+        <div class="grid item7"><input type="text" id="b7" onclick="handle_click_9(); checkwhowon();"/></div>
+        <div class="grid item8"> <input type="text" id="b8" onclick="handle_click_10();checkwhowon();"/></div>
+        <div class="grid item9"><input type="text" id="b9" onclick="handle_click_11();checkwhowon();"/></div>
+        <br /><br /><br />
+        <!-- Button to reset game -->
+        <button id="but" onclick="handle_click_2()">RESET</button>
+
+        <p id="print"></p>
+</body>
+
+</html>

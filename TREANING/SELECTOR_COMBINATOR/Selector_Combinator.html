@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main .first{
+            color: blue;
+        }
+        .main > .second{
+            color: pink;
+        }
+        .main + .smain{
+            color: purple;
+        }
+        .main ~ .tmain{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="first"><h1>first</h1>
+        <div class="first1"><h1>RAM</h1></div>
+        
+        </div>
+        <div class="second"><h1>second</h1></div>
+        <div class="third"><h1>third</h1></div>
+        <div class="four"><h1>four</h1></div>
+    </div>
+    <div class="smain"><h1>Five</h1> </div>
+
+    <div class="tmain"><h1>Six</h1></div>
+</body>
+</html>

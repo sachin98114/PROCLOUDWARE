@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+       <div class="main">
+            <p id="name">NAME :</p>
+            <p id="nameval"></p>
+
+            <p id="age">Age :</p>
+            <p id="ageval"></p>
+
+            <p id="city">city:</p>
+            <p id="cityval"></p>
+       </div>
+
+       <button onclick="fun()">Next</button>
+    <script>
+        var slides=[
+            {name:"ABC",age:"100",city:"Delhi"},
+            {name:"XYZ",age:"90",city:"ASR"},
+            {name:"PQR", age:"70",city:"CHD"}
+          ];
+          
+          
+            function fun(){
+            for(i=0;i<slides.length;i++){
+            var nameval=document.getElementById("nameval");
+            var ageval=document.getElementById("ageval");
+            var cityval=document.getElementById("cityval");
+
+
+            var text=document.createTextNode(slides[i].name);
+            var age=document.createTextNode(slides[i].age);
+            var city=document.createTextNode(slides[i].city);
+
+
+            nameval.append(text);
+            ageval.append(age);
+            cityval.append(city);
+
+            
+
+        }
+            }
+
+        
+
+    </script>
+</body>
+</html>

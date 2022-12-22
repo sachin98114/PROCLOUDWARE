@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+       .main{
+        border:  2px solid green;
+
+       }
+        body{
+            background-color: aqua;
+             text-align: center;
+        }
+        .main{
+            padding: 50px;
+        }
+       .btn{
+        position: fixed;
+        
+        
+       }
+        span{
+            font-size: 20px;
+        }
+        button{
+            padding: 7px;
+            position: fixed;
+           
+        }
+        #next{
+          margin-top: 40px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="cont">
+      <div class="main">
+        <span id="name">NAME :</span>
+        <span id="nameval">RAHUL</span>
+        <br />
+        <span id="age">Age :</span>
+        <span id="ageval">20</span>
+        <br />
+        <span id="city">city :</span>
+        <span id="cityval">BIHAR</span>
+      </div>
+
+      <div class="btn">
+      <button id="gun" onclick="gun()">prev</button>
+      <button id="next" onclick="fun()">Next</button>
+    </div>
+    </div>
+    <script>
+      var slides = [
+        { name: "PQR", age: "70", city: "CHD" },
+        { name: "ABC", age: "100", city: "Delhi" },
+        { name: "XYZ", age: "90", city: "ASR" },
+        { name: "sachin", age: "22", city: "BIHAR" },
+        { name: "SHASHANK", age: "20", city: "MJF" },
+        { name: "ARPAN", age: "23", city: "JAMMU" },
+        { name: "YUVRAJ", age: "105", city: "NAIJERIYA" },
+
+      ];
+
+      document.getElementById("gun").style.display = "none";
+
+      var nameval = document.getElementById("nameval");
+      var ageval = document.getElementById("ageval");
+      var cityval = document.getElementById("cityval");
+      let i = 0;
+      
+
+      function fun() {
+        i++;
+        document.getElementById("gun").style.display = "block";
+        document.getElementById("nameval").innerHTML = "";
+        document.getElementById("ageval").innerHTML = "";
+        document.getElementById("cityval").innerHTML = "";
+        if (i >= slides.length) {
+          i = 0;
+
+          document.getElementById("next").style.display = "none";
+
+          var text = document.createTextNode(slides[i].name);
+          var age = document.createTextNode(slides[i].age);
+          var city = document.createTextNode(slides[i].city);
+        }
+        var text = document.createTextNode(slides[i].name);
+        var age = document.createTextNode(slides[i].age);
+        var city = document.createTextNode(slides[i].city);
+
+        nameval.append(text);
+        ageval.append(age);
+        cityval.append(city);
+      }
+
+      function gun() {
+       
+        document.getElementById("nameval").innerHTML = "";
+        document.getElementById("ageval").innerHTML = "";
+        document.getElementById("cityval").innerHTML = "";
+        i--;
+        if (i < 0) {
+          i = slides.length-1;
+         
+          var text = document.createTextNode(slides[i].name);
+          var age = document.createTextNode(slides[i].age);
+          var city = document.createTextNode(slides[i].city);
+          document.getElementById("next").style.display = "block";
+        }else if(i==0){
+            document.getElementById("gun").style.display = "none";
+
+        }
+       
+        var text = document.createTextNode(slides[i].name);
+        var age = document.createTextNode(slides[i].age);
+        var city = document.createTextNode(slides[i].city);
+
+        nameval.append(text);
+        ageval.append(age);
+        cityval.append(city);
+      }
+    </script>
+  </body>
+</html>

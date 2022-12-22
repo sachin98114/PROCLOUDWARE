@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <input onkeyup="fun(event)" type="date"> -->
+    <script>
+      //  function fun(){
+      //     console.log(event.target.value);
+      //  }
+
+      // class hert{
+      //     constructor(name,price, discount,avl,age,amount){
+      //         this.name=name;
+      //         this.price=price;
+      //         this.discount=discount;
+      //         this.avl=avl;
+      //         this.age=age;
+      //         this.totalamount=amount;
+      //     }
+      // }
+      // let pencil=new hert("chair" ,30, 20);
+      // let hii=new hert("bed" ,30, 20,"no" , 78,7890);
+
+      // class obj{
+      //     constructor(name,age,roll,clas,state,height){
+      //         this.name=name;
+      //         this.age=age;
+      //         this.roll=roll;
+      //         this.class=clas;
+      //         this.state=state;
+      //         this.height=height;
+      //     }
+      //     get stateValue(){
+      //         return this.name;
+      //     }
+      //     set namevalue(w){
+      //          this.name=w;
+      //     }
+      // }
+      // var sachin=new obj("sachin" , 20, 1834577, "B.tech" ,"Bihar", "6fit");
+      // var Yuvraj=new obj("Yuvraj" , 23, 180483, "B.tech" ,"Bihar", "5.5fit");
+      // var shashank=new obj("shashank" , 20, 180409, "B.tech" ,"Bihar", "5.9fit");
+      // var Rahul=new obj("Rahul" , 22, 1804808, "B.tech" ,"Bihar", "5.10fit");
+      // var Gaurav=new obj("Gaurav" , 22, 1804792, "B.tech" ,"Bihar", "4.5fit");
+      // var Arpan=new obj("Arpan" , 20, 1804321, "B.tech" ,"Jammu", "5.5fit");
+      // Yuvraj.namevalue ="ABCD";
+      //  console.log(Yuvraj );
+
+      //    class Name{
+      //     constructor(name, age , id, state){
+      //         this.name=name;
+      //         this.age=age;
+      //         this.id=id;
+      //         this.state=state;
+      //     }
+      //     sayhi(){
+      //        return (this.name+"   "+this.age);
+      //     }
+
+      //    }
+      //    var s= new Name("sachin" , 20, 1, "Bihar");
+
+      // class employee{
+      //     constructor(name, age, dist){
+      //       this.name=name;
+      //       this.age=age;
+      //       this.dist=dist;
+      //     }
+      //   }
+
+      //    class manager extends employee{
+      //    constructor(name, age, dist,city)
+      //    {
+      //     super(name, age, dist);
+      //     this.city = city;
+      //   }
+
+      // }
+      // var w=new manager("sachin" , 21, "DBG" )
+      // var e=new manager("gaurav" , 21, "DBG","qwe");
+      // console.log(w);
+      // console.log(e);
+
+      // class student{
+      //     constructor(name , roll){
+      //       this.name=name;
+      //       this.roll=roll;
+      //     }
+      // }
+      //       class teacher extends student{
+      //         constructor(name, roll, parents){
+      //         super(name, roll);
+      //          this.parents=parents;
+      //         }
+      //       }
+
+      //       class princepal extends teacher{
+      //         constructor(name, roll, parents, address){
+      //         super(name, roll,parents);
+      //         this.address=address;
+
+      //       }
+      //     }
+
+      //       var s=new princepal("sachin" , 123, "radhaShayam","Bhikhiwind");
+      //       console.log(s);
+
+      class name {
+        constructor(name, age, id) {
+          this.name = name;
+          this.age = age;
+          this.id = id;
+        }
+      }
+      class address extends name {
+        constructor(name, age, id, roll) {
+          super(name, age, id);
+          this.roll = roll;
+        }
+      }
+      class mul extends address {
+        constructor(name, age, id, roll, add) {
+          super(name, age, id, roll);
+          this.add = add;
+        }
+      }
+      var s = new mul("sachin", 21, 577, 1834577, "Bhikhiwind");
+    </script>
+  </body>
+</html>

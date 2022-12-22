@@ -1,0 +1,110 @@
+// variable
+$gaurav:yellow;
+$sachin:blue;
+
+// nesting
+.h{
+   color: $sachin;
+   p{
+       color: $gaurav;
+       font-size: 30px+10;//(operator)
+   }
+   span{
+     background-color: blue;
+   }
+}
+
+// mixin
+//  @mixin name  ($ram: pink){
+
+//  background-color:$ram;
+//  width: 100px;
+//  height: 50px;
+//  text-align: center;
+//  border: 2px solid red;
+//  border-radius: 10px;
+
+//  }
+
+// .a{
+//      @include name ;
+// }
+// .b{
+//     @include name(red)
+// }
+// .c{
+//     @include name(green)
+// }
+// .d{
+//     @include name(purple)
+// }
+
+// inheretance
+%tin{
+    background-color:pink;
+width: 100px;
+height: 50px;
+text-align: center;
+border: 2px solid red;
+border-radius: 10px;
+
+}
+
+.a{
+    @extend %tin;
+}
+.b{
+    @extend %tin;
+   
+}
+.c{
+    @extend %tin;
+}
+.d{
+    @extend %tin;
+   
+}
+    
+// 
+
+$cardcolor:red;
+$card2color:blue;
+$card3color:pink;
+
+    
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+.card1{
+    height: 80px;
+    width: 130px;
+    border: 2px solid $card2color;
+    color: $cardcolor;
+
+}
+.card2{
+ border: 2px solid $card2color;
+ height: 80px;
+ width: 130px;
+ color: $card2color;
+
+}
+.card3{
+    border: 2px solid $card2color;
+    height: 80px;
+    width: 130px;
+    color: $card3color;
+    
+   }
+   .card4{
+    border: 2px solid $card3color;
+    height: 80px;
+    width: 130px;
+    color: $card4color;
+
+   }

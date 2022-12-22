@@ -1,0 +1,78 @@
+
+img{
+    /* float: right; */
+    margin-left: 75%;
+
+}
+.new5{
+    border-top: 10px solid greenyellow;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+.img2{
+    float: left;
+    margin-left: -150px;
+    
+}
+.wlcm{
+    margin-left: 210px;
+    color: black
+}
+.card1{
+    /* background-color: lightgrey; */
+  width: 250px;
+  border: 2px solid black;
+  border-radius: 15px;
+
+  /* padding: 40px; */
+  padding: 30px 10px 10px 10px;
+  margin: 20px;
+  width: 80%;
+  /* margin-left: 5px; */
+
+ 
+
+}
+.card2{
+    /* background-color: lightgrey; */
+  width: 250px;
+  border: 2px solid black;
+  border-radius: 15px;
+  /* padding: 40px; */
+  padding: 30px 10px 10px 10px;
+  margin: 20px;
+  width: 80%;
+
+ 
+
+}
+.card3{
+    /* background-color: lightgrey; */
+  width: 250px;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 30px 10px 10px 10px;
+  margin: 20px;
+  width: 80%;
+ 
+
+}
+.card{
+    display: flex;
+}
+
+
+.one{
+    background-color: blue;
+  /* text-align: right; */
+    display: flex; 
+    color: aliceblue; 
+    /* height: 25px; */
+  
+}
+.two{
+    text-align: right;
+    /* height: 15px; */
+    /* height: auto; */
+}
+@import url("styles.css");

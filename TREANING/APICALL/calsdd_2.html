@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="load()">Click</button>
+    <script>
+      // function load() {
+      //   var url = `https://reqres.in/api/users`;
+
+      //   fetch(url)
+      //     .then((response) => response.json())
+      //     .then((data) => {
+      //       var p = data.data[2].id;
+      //       console.log(data.data[1].id);
+      //       var url1 = `https://reqres.in/api/user/${p}`;
+      //       console.log(url1);
+      //       return fetch(url1);
+      //     })
+      //     .then((response) => response.json())
+      //     .then((data) => console.log(data.data.color));
+      // }
+
+
+
+      
+      function load(){
+        var url = `https://reqres.in/api/users`;
+        fetch (url)
+        .then((res) => res.json())
+        .then((data)=> {
+          var p=data.data[0].id;
+          var url2=`https://reqres.in/api/user${p}`;
+          console.log(url2);
+          return fetch(url2);
+        })
+        .then((Response) => Response.json())
+        .then((sac)=> console.log(sac));
+
+      }
+      
+    </script>
+  </body>
+</html>

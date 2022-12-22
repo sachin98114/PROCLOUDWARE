@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function name(val) {
+        var arr = val.toString().split("");
+        // var spl = arr.split("");
+         console.log("arr::"+arr);
+       
+     var num = arr.map(Number);
+
+        console.log("num::"+num);
+
+        const sum = num.reduce(
+          (previousValue, currentValue) => previousValue + currentValue
+        );
+        console.log("sum::"+sum)
+        const mul = num.reduce(
+          (previousValue, currentValue) => previousValue * currentValue
+          );
+        console.log("mul::"+mul)
+
+          
+          return mul - sum;
+        }
+        var s = name(1234);
+        console.log(s);
+    </script>
+  </body>
+</html>

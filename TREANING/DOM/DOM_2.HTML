@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .flex {
+            display: flex;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <a class="anc" onclick="navSlides()">basic</a><a class="anc" onclick="navSlides1()">adress</a><a class="anc"
+            onclick="navSlides2()">contact</a>
+    </div>
+    <form action="#">
+        <div class="one" id="oneOne">
+            <input type="text" placeholder="name" id="added">
+            <input type="text" placeholder="name">
+            <button onclick="forward()">next</button>
+        </div>
+        <div class="one twoTwo">
+            <input type="text" placeholder="ADDRESS">
+            <select name="" id="">
+                <option value="">india</option>
+                <option value="">india</option>
+            </select>
+            <select name="" id="">
+                <option value="">punjab</option>
+                <option value="">haryana</option>
+            </select>
+            <button onclick="backward()">prev</button>
+            <button onclick="forward()">next</button>
+
+        </div>
+        <div class="one threeThree">
+            <input type="text" placeholder="number">
+            <button onclick="backward()">prev</button>
+            <button onclick="sumb()">submit</button>
+        </div>
+
+    </form>
+    <script>
+        var hider = document.getElementsByClassName("one");
+        var anchor = document.getElementsByClassName("anc");
+        var navSelect = 1;
+        var k = 0;
+        if (k == 0) {
+            for (i = 1; i < hider.length; i++) {
+                console.log(hider[i])
+                hider[i].style.display = "none";
+                anchor[i].style.color = "black";
+            }
+            anchor[0].style.color = "red";
+        }
+        
+        function forward() {
+            debugger;
+            k++;
+            if (k > hider.length) {
+                k = 0;
+                for (j = 0; j < hider.length; j++) {
+                    if (j == k && anchor[j] == anchor[k]) {
+                        hider[j].style.display = "block";
+                        anchor[j].style.color = "red";
+                    }
+                    else {
+                        hider[j].style.display = "none";
+                        anchor[j].style.color = "black";
+                    }
+                }
+            }
+            else {
+                for (j = 0; j < hider.length; j++) {
+                    if (j == k && anchor[j] == anchor[k]) {
+                        hider[j].style.display = "block";
+                        anchor[j].style.color = "red";
+                    }
+                    else {
+                        hider[j].style.display = "none";
+                        anchor[j].style.color = "black";
+                    }
+                }
+
+            }
+        }
+        function backward() {
+            k--;
+            if (k < 0) {
+                k = hider.length - 1;
+                for (j = 0; j < hider.length; j++) {
+                    if (j == k && anchor[j] == anchor[k]) {
+                        hider[j].style.display = "block";
+                        anchor[j].style.color = "red";
+                    }
+                    else {
+                        hider[j].style.display = "none";
+                        anchor[j].style.color = "black";
+                    }
+                }
+            }
+            else {
+                for (j = 0; j < hider.length; j++) {
+                    if (j == k && anchor[j] == anchor[k]) {
+                        hider[j].style.display = "block";
+                        anchor[j].style.color = "red";
+                    }
+                    else {
+                        hider[j].style.display = "none";
+                        anchor[j].style.color = "black";
+                    }
+                }
+            }
+        }
+
+        function sumb() {
+            alert("thanks")
+        }
+
+       
+
+        function navSlides() {
+            for (nav = 0; nav < anchor.length; nav++) {
+                if (nav == 0) {
+                    hider[nav].style.display = "block";
+                    anchor[nav].style.color = "red";
+                }
+                else {
+                    hider[nav].style.display = "none";
+                    anchor[nav].style.color = "black";
+                }
+            }
+        }
+        function navSlides1() {
+            for (nav = 0; nav < anchor.length; nav++) {
+                if (nav == 1) {
+                    hider[nav].style.display = "block";
+                    anchor[nav].style.color = "red";
+                }
+                else {
+                    hider[nav].style.display = "none";
+                    anchor[nav].style.color = "black";
+                }
+            }
+        }
+        function navSlides2() {
+            for (nav = 0; nav < anchor.length; nav++) {
+                if (nav == 2) {
+                    hider[nav].style.display = "block";
+                    anchor[nav].style.color = "red";
+                }
+                else {
+                    hider[nav].style.display = "none";
+                    anchor[nav].style.color = "black";
+                }
+            }
+        }
+      </script>
+</body>
+</html>

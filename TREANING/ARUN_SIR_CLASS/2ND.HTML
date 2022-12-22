@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Gaurav{
+            myntra;
+            flipkart;
+            #amazone;
+            constructor(myntra, flipkart,amazone){
+             this.myntra=myntra;
+             this.flipkart=flipkart;
+             this.#amazone=amazone;
+            }
+            get fun(){
+                return this.#amazone;
+            }
+
+            set gun(w){
+            this.flipkart=w;
+            }
+        }
+        
+        class Shashank extends Gaurav{
+            home;
+            #kitchen;
+            constructor(home, kitchen,myntra, flipkart,amazone){
+                super(myntra, flipkart,amazone);
+                this.home=home;
+                this.#kitchen=kitchen;
+            }
+            get sun(){
+                return this.#kitchen;
+            }
+        }
+          var s=new Shashank("DELHI" ,"AUNTY" , "REVOLUTION5" ,"DOWN11","BILLPAY");
+
+    </script>
+</body>
+</html>

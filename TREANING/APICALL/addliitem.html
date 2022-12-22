@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <span>To add list</span>
+  <input type="text" name="" id="inp" />
+
+  <button onclick="load()">ADD</button>
+
+  <script>
+    var arr = [];
+    function load() {
+      var p = document.getElementById("inp");
+      arr.push(p.value);
+      console.log(arr);
+
+      var affr = document.createElement("li");
+      document.body.appendChild(affr);
+      affr.innerText = p.value;
+      affr.style.color="red";
+      affr.style.fontSize="50px";
+
+      p.value = "";
+
+      var dba = document.createElement("button");
+      document.body.appendChild(dba);
+      dba.innerText = "DELETE";
+
+      dba.onclick = function remove() {
+        affr.remove();
+        dba.remove();
+        edit.remove();
+      };
+
+      var edit = document.createElement("button");
+      document.body.appendChild(edit);
+      edit.innerText = "edit";
+
+      edit.onclick = function edi() {
+       p.value=affr.innerHTML;
+       affr.remove();
+       dba.remove();
+      edit.remove();
+        
+      };
+      var xyz = JSON.stringify(arr);
+      localStorage.setItem("value", xyz);
+    }
+  </script>
+</body>
+
+</html>

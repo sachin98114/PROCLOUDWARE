@@ -1,0 +1,183 @@
+.topbgimg {
+  height: 71px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("bg-search-form2.gif");
+}
+.topbgimg .logogif {
+  position: relative;
+  margin-left: 300px;
+}
+.topbgimg .homeabout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 60px;
+  position: absolute;
+  font-size: medium;
+  margin-top: -65px;
+  margin-left: 600px;
+  /* background-color: orange; */
+  list-style-type: none;
+}
+.topbgimg .menu {
+  position: absolute;
+  margin-top: 37px;
+}
+
+.dogjpg {
+  /* border: 1px solid black; */
+  width: 89%;
+  height: 500px;
+  background-image: url("dog.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 550px;
+}
+.box .midleft {
+  margin-top: 100px;
+  margin-left: 160px;
+  width: 45%;
+}
+.box .midcattext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.box .midbird {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.box p {
+  font-size: small;
+  word-spacing: 3px;
+  text-decoration: none;
+  color: gray;
+}
+.box h5 {
+  text-align: left;
+  font-style: oblique;
+}
+
+.midrighttop {
+  margin-top: 100px;
+  margin-left: 20px;
+  background-image: url("bg-search-form.gif");
+  background-size: cover;
+  width: 300px;
+  height: 70px;
+  border-radius: 7px;
+}
+.midrighttop .find {
+  position: absolute;
+  margin-left: -190px;
+  margin-top: 11px;
+  display: inline-block;
+  color: gray;
+}
+.midrighttop .rd {
+  margin-left: 10px;
+}
+.midrighttop p {
+  display: inline-block;
+  color: white;
+  margin-left: 10px;
+}
+
+.midrightlow {
+  margin-top: 10px;
+  margin-left: 20px;
+  height: 30px;
+}
+.midrightlow .spng {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: -43px;
+}
+.midrightlow .spng p {
+  font-size: large;
+  color: black;
+}
+.midrightlow .midrightbottom {
+  margin-top: -17px;
+  height: 270px;
+  background-image: url("bg-sidebar-mid.gif");
+}
+.midrightlow #petacc {
+  background-color: orange;
+  width: 96%;
+  height: 27px;
+  margin-left: 6px;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+.card {
+  width: 100%;
+  height: 130px;
+  background-color: lightgrey;
+}
+
+.orgA {
+  margin-top: 15px;
+  border-radius: 10px;
+  margin-left: 200px;
+}
+
+.catB {
+  margin-top: 15px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.girlC {
+  margin-top: 15px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.secondlast {
+  width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+}
+.secondlast .secondlast1 {
+  margin-left: 180px;
+}
+.secondlast .secondlast4 {
+  margin-right: 200px;
+}
+.secondlast .yellow1 {
+  color: orange;
+  margin-top: -100px;
+}
+.secondlast p {
+  color: white;
+}
+
+.bottom {
+  width: 100%;
+  height: 40px;
+  border: 2px solid black;
+  background-color: orange;
+  position: relative;
+  margin-top: -17px;
+}
+.bottom p {
+  text-align: center;
+}

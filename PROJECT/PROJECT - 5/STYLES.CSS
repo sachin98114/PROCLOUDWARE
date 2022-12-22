@@ -1,0 +1,386 @@
+.first {
+    background-image: url("DietPlan/main-background.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 750px;
+  }
+  .icon {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 90px;
+  }
+  .text1 {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .trick {
+    margin-top: 290px;
+  }
+
+
+
+
+  .second{
+    background-image: url("DietPlan/Form_background-image.jpg");
+    text-align: center;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    display: flex;
+  }
+  .leftimage{
+    width: 22%;
+    border-radius: 0px 0px 10px 0px;
+    padding: 100px 0px;
+    height: 805px;
+  }
+  .leftimage img {
+    height: 675px;  
+    width: 90%;
+}
+.form {
+    background-color: white;
+    width: 67%;
+    padding-top: 20px;
+    height: 667px;
+    border: 5px solid white;
+    margin-top: 100px;
+}
+.forflex{
+    display: flex;
+}
+.left{
+    width: 50%;
+}
+.right{
+    width: 50%;
+}
+.leftforflex1 {
+    display: flex;
+    justify-content: space-between;
+}
+.rightforflex1 {
+    display: flex;
+    justify-content: space-between;
+}
+.right2 {
+    /* display: flex; */
+    justify-content: space-between;
+}
+
+.rightforflex2 p {
+    /* display: flex; */
+    text-align: left;
+    font-size: 1.2em
+}
+.rightforflex2{
+    display: flex;
+    color: orange;
+
+}
+
+.detail{
+    text-align: initial;
+color: orange;
+font-size: 2em;
+}
+
+.right2 p {
+    /* display: flex; */
+    text-align: left;
+    font-size: 1.2em
+}
+
+.right-goal {
+    border-width: 0px 0px 3px 0px;
+    border-color: grey;
+    padding: 3px;
+    text-align: left;
+    width: 90%;
+    margin-top: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.coloumn {
+    width: 100%;
+    text-align: left;
+    border: 0px;
+}
+
+.coloumn input {
+    border-width: 0px 0px 3px 0px;
+    border-color: grey;
+    padding: 3px;
+    font-size: 1.5em;
+    width: 90%;
+}
+
+.leftforflex1 input {
+    border-width: 0px 0px 3px 0px;
+    border-color: grey;
+    padding: 3px;
+    font-size: 1.5em;
+    width: 68%;
+}
+
+.coloumn p {
+    margin: 20px 0px;
+    font-size: 1.2em;
+}
+
+.opt {
+    border-width: 0px 0px 3px 0px;
+    border-color: grey;
+    padding: 3px;
+    text-align: left;
+    width: 82%;
+    margin-top: 10px;
+}
+
+.tag {
+    margin-top: 112px;
+    border: none;
+    background-color: white;
+    font-size: 1.2em;
+    color: grey;
+}
+
+.butun {
+    margin-top: 112px;
+    margin-left: 30%;
+    background-color: orange;
+    padding: 10px 50px;
+    border-radius: 23px;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+
+/* sdfghjklsdfghjertyuisdfghxdfghjcvbncfghjcfghjcvbncvbxcvgbhnjfgfherygierytioetiutoy984p9 vbhfvgbhnjfvgbh */
+
+.third {
+width: 100%;
+background: url("DietPlan/background.jpg");
+background-position: bottom;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.bigbox {
+background-color: rgba(0, 0, 0, 0.7);
+padding: 60px;
+/* width: 94%; */
+padding-top: 100px;
+}
+
+.bigbox h2 {
+color: white;
+text-align: center;
+font-size: 4em;
+margin: 10px 0;
+}
+
+.bigbox p {
+color: white;
+font-size: 1.8em;
+text-align: center;
+}
+
+.forflex2ndlast{
+display: flex;
+/* flex-direction: row; */
+justify-content: space-around;
+margin: 40px 0px;
+flex-wrap: wrap;
+}
+
+.secondlast {
+justify-content: space-between;
+min-width: 350px;
+width: 23%;
+padding: 0px 10px;
+}
+
+.secondlast h4 {
+color: white;
+text-align: center;
+font-size: 1.8em;
+margin-bottom: 10px;
+}
+
+.secondlast hr {
+width: 400px;
+background: white;
+border: 0px;
+height: 2px;
+}
+
+.secondlast p {
+font-size: 1.4em;
+text-align: justify;
+}
+
+.line hr {
+width: 150px;
+background: white;
+height: 1px;
+border: 0px;
+}
+
+.text h3 {
+text-align: center;
+color: white;
+font-size: 2.5em;
+margin: 10px 20px;
+}
+
+.text {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.secondlastbox {
+text-align: center;
+}
+
+.secondlastbox button {
+background-color: transparent;
+padding: 10px 100px;
+font-size: 1em;
+border-radius: 30px;
+color: white;
+border: 1px solid white;
+width: 40%;
+}
+
+/* lkjslfhsdklfhkdjsK */
+
+
+
+.bottom {
+display: flex;
+justify-content: space-around;
+align-items: center;
+position: relative;
+padding-bottom: 30px;
+flex-wrap: wrap;
+}
+
+.paragraph {
+margin-left: 11%;
+width: 325px;
+}
+
+.heading-bottom {
+margin-left: 11%;
+margin-top: 2%;
+}
+
+.lside {
+width: 19%;
+min-width: 300px;
+}
+
+.lside img {
+margin-top: 58px;
+}
+
+.lside p {
+text-align: justify;
+font-size: 1.2em;
+color: black;
+}
+
+h3 {
+font-size: 1.9em;
+color: black;
+margin: 20px 0px;
+}
+
+.call-us {
+color: black;
+font-size: 1.8em
+}
+
+.rside {
+width: 19%;
+padding: 0px 38px 58px 35px;
+min-width: 300px;
+}
+
+h2 {
+color: black;
+font-size: 2em;
+margin: 20px;
+}
+
+.email-button input {
+width: 50%;
+border-radius: 20px 0px 0px 20px;
+padding: 20px;
+border: 2px solid green;
+}
+
+.email-button button {
+background-color: green;
+padding: 21px;
+border-radius: 0px 20px 20px 0px;
+margin-left: -4px;
+border: 1px solid green;
+color: white;
+}
+
+.socalmediaicon {
+display: flex;
+}
+
+.socalmediaicon img {
+width: 55px;
+padding: 11px;
+}
+
+.ft {
+background-image: url("DietPlan/corner.svg");
+background-size: contain;
+height: 180px;
+width: 100%;
+background-repeat: no-repeat;
+transform: rotate( 180deg);
+position: absolute;
+left: 0%;
+top: 70%;
+}
+
+.cright {
+position: absolute;
+top: 100%;
+font-size: 1.2em;
+color: grey;
+}
+
+.form-img {
+    width: 0px;
+}
+.form {
+    width: 100%;
+
+}
+
+
+
+
+
+
+ 

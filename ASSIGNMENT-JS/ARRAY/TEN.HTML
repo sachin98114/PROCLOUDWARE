@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function getArraysIntersection(a1,a2){
+    return  a1.filter(function(n) { return a2.indexOf(n) !== -1;});
+ }
+var colors1 = ["red","blue","green"];
+var colors2 = ["red","yellow","blue"];
+var intersectingColors=getArraysIntersection(colors1, colors2); //["red", "blue"]
+document.write(intersectingColors);
+    </script>
+</body>
+</html>

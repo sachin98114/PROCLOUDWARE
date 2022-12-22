@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var a=234;
+       var digit_1=a%10;
+       var digit_12=a/10;
+       var digit_123=Math.floor(digit_12)
+       
+       
+    //    document.write(digit_1); //4
+    //    document.write(digit_123);
+    
+
+       var digit_2=digit_123%10; 
+    //   document.write(digit_2); //3
+       
+       var digit_21=digit_123/10;
+       var digit_22=Math.floor(digit_21);
+    //    document.write(digit_22);
+
+        var sum=digit_1+digit_2+digit_22;
+        // document.write(sum);
+
+
+        var mul=digit_1*digit_2;
+        var mul1=mul*digit_22;
+        // document.write(mul1);
+
+       var final=mul1-sum;
+       document.write(final);
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <input type="text" id="fname" />
+    <button onclick="get()">GET</button>
+    <div id="ptag"></div>
+
+    <script>
+      var val = document.getElementById("fname");
+      var arr=[];
+      function get() {
+        for (i = 0; i < 1; i++) {
+          const url = `https://reqres.in/api/users?page=${i}`;
+          fetch(url, {
+            method: "GET",
+          })
+            .then((response) => response.json())
+            .then((val) => {
+              val.data.forEach((value) => {
+                const node = document.createElement("p");
+                const textnode = document.createTextNode("ID :" + value.id);
+                node.appendChild(textnode);
+                document.getElementById("ptag").appendChild(node);
+                // console.log(val);
+                arr.push(value);
+
+                const node1 = document.createElement("p");
+                const textnode1 = document.createTextNode(
+                  "firstName :" + value.first_name
+                );
+                
+                node.appendChild(textnode1);
+                document.getElementById("ptag").appendChild(node1);
+                // console.log(value);
+
+                const node2 = document.createElement("p");
+                const textnode2 = document.createTextNode(
+                  "lastName :" + value.last_name
+                );
+                node.appendChild(textnode2);
+                document.getElementById("ptag").appendChild(node2);
+                // console.log(value);
+
+                const node3 = document.createElement("p");
+                const textnode3 = document.createTextNode(
+                  "email :" + value.email
+                );
+                node.appendChild(textnode3);
+                document.getElementById("ptag").appendChild(node3);
+                // console.log(value);
+
+                const node4 = document.createElement("img");
+                node4.src = value.avatar;
+                document.getElementById("ptag").appendChild(node4);
+
+                // console.log(value);
+              });
+              console.log(arr[4].id);
+              
+            });
+        }
+      }
+    </script>
+  </body>
+</html>

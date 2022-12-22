@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        width: 100vw;
+        height: 100vh;
+        border: 5px solid goldenrod;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        flex-direction: row-reverse;
+       
+      }
+      .first {
+        height: 100px;
+        width: 24vw;
+        border: 3px solid green;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+        border-radius: 20px;
+
+      }
+      .first:hover{
+        background-color: black;
+        /* color: white; */
+      }
+      .first:visited{
+        color: yellowgreen;
+      
+      }
+      .main .first::first-line{
+        color: red;
+      
+      }
+      .first::selection{
+        color: brown;
+      }
+      .second {
+        height: 100px;
+        width: 24vw;
+        border: 3px solid yellow;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+        border-radius: 20px;
+
+      }
+      .third {
+        height: 100px;
+        width: 24vw;
+        border: 3px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+        border-radius: 20px;
+      }
+      
+      .four {
+        height: 100px;
+        width: 24vw;
+        border: 3px solid pink;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        justify-content: space-around;
+        float: right;
+        border-radius: 20px;
+       
+        order: 1;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="first"><a href="https://cdnjs.com/libraries/font-awesome/4.7.0">Click me</a></div>
+      <div class="second">SECOND</div>
+      <div class="third">THIRD</div>
+      <div class="four">FOUR</div>
+     
+
+    </div>
+  </body>
+</html>

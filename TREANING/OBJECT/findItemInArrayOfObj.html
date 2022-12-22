@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+// // 1. find all the section title which are enabled 
+// // 2. print the number of sections enabled 
+// // 3. Create a list of questions where we have all 3 options [yes, no, maybe]
+// // 4. create a list of section level questions and one list of sub section level Questions 
+// // 5. Create a unique list of all the questions in this object 
+// // 6. remove the disabled sections and subSections from data
+  let obj = {
+    title: "One",
+    sections: [
+        {
+            title: "Section One",
+            enabled: true,
+            subSections: [
+                {
+                title: "Sub Sec 1",
+                enabled: true,
+                questions: [
+                  {
+                    name: "Question 1",
+                    answers: ["yes", "no", "maybe"],
+                },
+              {
+                    name: "Question 2",
+                    answers: ["yes", "no"],
+                  },
+                  {
+                    name: "Question 3",
+                    answers: ["yes", "no", "maybe"],
+                  },
+                  {
+                    name: "Question 4",
+                    answers: ["yes", "no"],
+                },
+                {
+                    name: "Question 5",
+                    answers: ["yes", "no", "maybe"],
+                },
+            ],
+              },
+            ],
+          },
+          {
+              title: "Section Two",
+              enabled: false,
+              subSections: [
+                  {
+                  title: "S1",
+                enabled: true,
+                questions: [
+                  {
+                    name: "Question 1",
+                    answers: ["yes", "no", "maybe"],
+                  },
+                  {
+                      name: "Question 2",
+                    answers: ["yes", "no", "maybe"],
+                  },
+                  {
+                    name: "Question 3",
+                    answers: ["yes", "no"],
+                },
+                {
+                    name: "Question 4",
+                    answers: ["yes", "no", "maybe"],
+                },
+                {
+                    name: "Question 5",
+                    answers: ["yes", "no"],
+                  },
+                ],
+              },
+            ],
+          },
+          {
+              title: "Section Three",
+            enabled: true,
+            subSections: [
+              {
+                  title: "Sub Sec 1",
+                enabled: true,
+                questions: [
+                    {
+                        name: "Question 1",
+                        answers: ["yes", "no", "maybe"],
+                    },
+                    {
+                        name: "Question 12",
+                        answers: ["yes", "no"],
+                    },
+                    {
+                    name: "Question 13",
+                    answers: ["yes", "no", "maybe"],
+                },
+                {
+                    name: "Question 14",
+                    answers: ["yes", "no"],
+                },
+                {
+                    name: "Question 15",
+                    answers: ["yes", "no", "maybe"],
+                  },
+                  {
+                      name: "Question 16",
+                    answers: ["yes", "no", "maybe"],
+                  },
+                  {
+                      name: "Question 17",
+                    answers: ["yes", "no"],
+                  },
+                  {
+                    name: "Question 18",
+                    answers: ["yes", "no", "maybe"],
+                  },
+                  {
+                    name: "Question 19",
+                    answers: ["yes", "no"],
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      };
+     
+// // // 1. find all the section title which are enabled 
+  //  var arr=[];   
+  //  var s=  obj.sections.filter((val)=> {
+  //   if(val.enabled==true){
+
+  //     var t=val.title;
+  //     arr.push(t);
+  //   }
+  // }); 
+  // console.log(arr)
+
+//  // // 2. print the number of sections enabled  //  //  //  //
+   var arr=[];
+   var s;
+   var t=obj.sections.map((val)=>{
+   if(val.enabled==true){
+    val.subSections.filter((ral) => arr.push(ral))
+     
+    }
+})
+console.log(arr);
+  
+    </script>
+  </body>
+</html>

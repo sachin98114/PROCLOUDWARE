@@ -1,0 +1,42 @@
+
+$cardcolor:red;
+$card2color:blue;
+$card3color:pink;
+
+    
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+.card1{
+    height: 80px;
+    width: 130px;
+    border: 2px solid $card2color;
+    color: $cardcolor;
+
+}
+.card2{
+ border: 2px solid $card2color;
+ height: 80px;
+ width: 130px;
+ color: $card2color;
+
+}
+.card3{
+    border: 2px solid $card2color;
+    height: 80px;
+    width: 130px;
+    color: $card3color;
+    
+   }
+   .card4{
+    border: 2px solid $card3color;
+    height: 80px;
+    width: 130px;
+    color: $card4color;
+
+   }

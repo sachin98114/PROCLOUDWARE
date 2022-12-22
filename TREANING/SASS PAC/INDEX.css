@@ -1,0 +1,19 @@
+.h {
+  color: blue;
+}
+.h p {
+  color: yellow;
+  font-size: 40px;
+}
+.h span {
+  background-color: blue;
+}
+
+.d, .c, .b, .a {
+  background-color: pink;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  border: 2px solid red;
+  border-radius: 10px;
+}

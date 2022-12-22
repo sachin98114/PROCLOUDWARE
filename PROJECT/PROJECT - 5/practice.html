@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100%;
+        /* border: 3px solid black; */
+        height: 900px;
+        background-image: url("DietPlan/Form_background-image.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        /* margin-top: 50px; */
+        background-position-y: bottom;
+      }
+      .forflex {
+        display: flex;
+      }
+      .left {
+        width: 22%;
+        padding: 100px 0px;
+        height: 805px;
+      }
+      .left img {
+        height: 675px;
+        width: 90%;
+      }
+      .right {
+        /* border: 3px solid red; */
+        /* border: 5px solid white; */
+        border-radius: 10px;
+        background-color: whitesmoke;
+        width: 78%;
+        padding-top: 15px;
+        margin-top: 100px;
+        height: 658px;
+        margin-left: -30px;
+      }
+      .rightchild {
+        align-items: center;
+        margin-right: 15%;
+        margin-left: 5%;
+      }
+      .basic {
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+      hr{
+        margin-left: 20px;
+
+      }
+      .forflex2 {
+        /* border: 2px solid green; */
+        display: flex;
+        
+      }
+      .forflex3 {
+        display: flex;
+        /* justify-content: space-between; */
+        /* color: blue; */
+        width: 395px;
+      }
+      .forflex4 {
+        display: flex;
+        width: 410px;
+      }
+      .forflex5 {
+        display: flex;
+        width: 400px;
+      }
+      .rightchild1 {
+        /* border: 3px solid firebrick; */
+        width: 100%;
+        height: 500px;
+
+      }
+      .rightchild2 {
+        /* border: 3px solid firebrick; */
+        width: 100%;
+        height: 500px;
+        margin-right: 10px;
+      }
+      .rightchild1 input{
+        border: none;
+        border-bottom: 3px solid gray;
+        background-color:whitesmoke ;
+        margin-left: 20px;
+        margin-top: 25px;
+        padding: 3px;
+        font-size: 1.5em;
+        width: 68%;
+      }
+      .rightchild2 input{
+        border: none;
+        background-color: whitesmoke;
+        margin-top: 30px;
+        border-bottom: 3px solid gray;
+        margin-left: 20px;
+        padding: 3px;
+        font-size: 1.5em;
+        width: 68%;
+
+        text-align: left;
+    font-size: 1.2em
+      }
+      .rightchild1 p{
+        font-size: 1.2em;
+        margin-left: 20px;
+      }
+      .rightchild2 p{
+        font-size: 1.2em;
+        margin-left: 20px;
+      }
+      .reset button{
+        background-color: whitesmoke;
+        position: relative;
+        margin-top: 40px;
+        border: none;
+        font-size: 1.2em;
+        color: gray;
+      }
+      .basic{
+        color: yellow;
+      }
+      .continue{
+        margin-left: 45rem;
+       margin-top: 40px; 
+       
+      }
+      .continue button{
+        font-size: 1.5em; 
+        border-radius: 30px;
+        background-color: orange;
+        border: none;
+        color: white;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="forflex">
+        <div class="left">
+          <img class="leftimg" src="DietPlan\form-side.png" alt="No" />
+        </div>
+
+        <div class="right">
+          <h2 class="basic">BASIC DETAIL</h2>
+          <hr>
+          <div class="forflex2">
+
+          <div class="rightchild1">
+            
+
+
+              
+                <div class="coloumn">
+                  <p>First Name</p>
+                  <input type="text" placeholder="" />
+                </div>
+                
+
+                <div class="coloumn">
+                  <p>E-Mail</p>
+                  <input type="text" />
+                </div>
+                  
+                
+
+                <div class="forflex3">
+                  <div class="coloumn">
+                    <p>Height(fit)</p>
+                    <input type="text" placeholder="" />
+                  
+                  </div>
+
+                  
+
+                  <div class="coloumn">
+                    <p>Height (inch)</p>
+                    <input type="text" placeholder="" />
+                  </div>
+
+                  
+                  <div class="coloumn">
+                    <p>Wight (Kg)</p>
+                    <input type="text" placeholder="" />
+                    
+                  </div>
+                  
+                </div>
+
+                <div class="coloumn">
+                  <p>Phone Number</p>
+                  <input type="text" placeholder="" />
+                </div>
+
+
+                
+                <div class="reset">
+                  <button type="button">Reset All</button>
+                </div>
+              </div>
+                
+              
+
+
+
+              <div class="rightchild2">
+
+              
+                <div class="coloumn">
+                  <p>Last Name</p>
+                  <input type="text" placeholder="" />
+                </div>
+
+                <div class="forflex4">
+                  <div class="coloumn">
+                    <p>Age</p>
+                    <input type="text" placeholder="" />
+                  </div>
+                  <div class="coloumn">
+                    <p>Gender</p>
+                    <input type="text" placeholder="" />
+                  </div>
+                </div>
+
+                <div class="coloumn">
+                  <p>Goal</p>
+                  <input type="text" placeholder="" />
+                </div>
+
+                <div class="forflex5">
+                  <div class="coloumn">
+                    <p>PrefareDay & Timecall</p>
+                    <input type="text" placeholder="" />
+                  </div>
+
+                  <div class="coloumn">
+                    <p>.</p>
+                    <input type="text" placeholder="" />
+                  </div>
+                </div>
+              </div>
+              </div>
+              <!-- hfgfgefgsefhgsfghgshgsj -->
+
+
+              <div class="continue">
+                <button type="button">CONTINIUE</button>
+              </div>
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

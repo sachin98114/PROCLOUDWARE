@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="">ROLL</label>
+    <input type="text" id="fname1" />
+    <br />
+    <br />
+    <label for="">NAME</label>
+    <input type="text" id="fname2" />
+    <br />
+    <br />
+    <label for="">CLASS</label>
+    <input type="text" id="fname3" />
+    <br />
+    <br />
+    <label for="">ADDRESS</label>
+    <input type="text" id="fname4" />
+    <br />
+    <br />
+    <button onclick="get()">Click me!</button>
+
+    <script>
+      var val1 = document.getElementById("fname1");
+      var val2 = document.getElementById("fname2");
+      var val3 = document.getElementById("fname3");
+      var val4 = document.getElementById("fname4");
+ 
+
+
+      function get(){
+
+          var obj = {
+            Roll: val1.value,
+            Name: val2.value,
+            Class: val3.value,
+            Address: val4.value,
+          };
+    
+          console.log(obj);
+      }
+    </script>
+  </body>
+</html>

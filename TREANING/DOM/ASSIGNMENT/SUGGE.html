@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .frormcontainer {
+        background-color: aliceblue;
+        text-align: center;
+        padding: 50px;
+        border-radius: 20px;
+        justify-content: center;
+      }
+      h2 {
+        margin: 0px 0px 10px 0px;
+      }
+      input {
+        width: 200px;
+        padding: 10px;
+        margin: 10px 0px;
+      }
+      input[type="submit"] {
+        width: 222px;
+        background-color: blue;
+        color: white;
+        cursor: pointer;
+        border: 0px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myDIV"></div>
+    <ul id="ul">
+      <li class="item">SACHIN</li>
+      <li class="item">GAURAV</li>
+      <li class="item">RAHUL</li>
+      <li class="item">YUVRAJ</li>
+      <li class="item">SHAAHANK</li>
+      <li class="item">MANISH</li>
+      <li class="item">ARPAN</li>
+      <li class="item">SAAJAN</li>
+      <li class="item">KARAN</li>
+      <li class="item">DINESH SIR</li>
+    </ul>
+
+    <div class="frormcontainer">
+      <form action="" onsubmit="return validateForm()">
+        <h2>Log In</h2>
+        <input
+          type="text"
+          id="fname"
+          onkeyup="myFunction()"
+          placeholder="User Name"
+          minlength="3"
+        />
+        <br />
+
+        <input
+          type="password"
+          name=""
+          id="password"
+          placeholder="Password"
+          minlength="3"
+        />
+        <br />
+        <input type="submit" name="" id="submit" />
+
+        <script>
+          var d=document.getElementById("ul");
+          d.style.display="none";
+          let arr = [];
+          let s1 = document.getElementsByClassName("item");
+
+          for (i = 0; i < s1.length; i++) {
+            let s2 = s1[i].innerHTML;
+            arr.push(s2);
+          }
+          console.log(arr);
+
+          function myFunction() {
+            var x = document.getElementById("fname");
+            document.getElementById("myDIV").innerHTML = "";
+            for (i = 0; i < arr.length; i++) {
+              if (arr[i].startsWith(x.value)) {
+                console.log(arr[i]);
+
+                const h1 = document.createElement("P");
+                const textNode = document.createTextNode(arr[i]);
+                h1.appendChild(textNode);
+                var t = document.body.appendChild(h1);
+                document.getElementById("myDIV").appendChild(t);
+              }
+            }
+          }
+        </script>
+      </form>
+    </div>
+  </body>
+</html>

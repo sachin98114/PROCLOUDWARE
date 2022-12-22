@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2px;
+        /* Keep the grid under the box and don't go out. That's why i used this property */
+        border: 2px solid black;
+        margin: 0 auto;
+        max-width: 700px;
+        min-width: 100px;
+      }
+      .box {
+        background-color: yellow;
+        border: 2px solid green;
+        border-radius: 10px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">One</div>
+      <div class="box">Two</div>
+      <div class="box">Three</div>
+      <div class="box">Four</div>
+      <div class="box">Five</div>
+      <div class="box">One</div>
+      <div class="box">Two</div>
+      <div class="box">Three</div>
+      <div class="box">Four</div>
+      <div class="box">Five</div>
+      <div class="box">One</div>
+      <div class="box">Two</div>
+      <div class="box">Three</div>
+      <div class="box">Four</div>
+      <div class="box">Five</div>
+      <div class="box">One</div>
+      <div class="box">Two</div>
+      <div class="box">Three</div>
+      <div class="box">Four</div>
+      <div class="box">Five</div>
+      <div class="box">One</div>
+      <div class="box">Two</div>
+      <div class="box">Three</div>
+      <div class="box">Four</div>
+      <div class="box">Five</div>
+    </div>
+  </body>
+</html>

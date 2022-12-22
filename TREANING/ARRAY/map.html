@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // var arr=[2, 4, 6, 8, 3, 5, 7] ;
+      //  var s=   arr.map(mul);
+      //  console.log(s);
+
+      // function mul(x){
+      // var p=x*10;
+      // return p;
+      //    }
+
+      // var arr=[2 ,4 , 6,8,3,5,7] ;
+      //  var s=   arr.filter(mul);
+      //  console.log(s);
+
+      //  function mul(p){
+      //     return p>=6;
+      //  }
+
+      //  var arr=[2 ,4 , 6, 8, 3, 5 , 7 ];
+      //  var s=   arr.reduce(mul);
+      //  console.log(s);
+
+      //  function mul(currentvalue , nextvalue){
+      //  return currentvalue + nextvalue;
+      //  }
+
+      // function map(x){
+      //     var s=x.toString().map();
+      //     console.log(typeof( s));
+      //     return;
+      // }map(23456);
+
+      //     var fib = function(n) {
+      //   if (n === 1) {
+      //     return [0, 1];
+      //   } else {
+      //     var arr = fib(n - 1);
+      //     arr.push(arr[arr.length - 1] + arr[arr.length - 2]);
+      //     return arr;
+      //   }
+      // };
+
+      // console.log(fib(8));
+
+      // program to generate fibonacci series up to n terms
+
+      // take input from the user
+
+      // const number = parseInt(prompt('Enter the number of terms: '));
+      // let n1 = 0, n2 = 1, nextTerm;
+
+      // console.log('Fibonacci Series:');
+
+      // for (let i = 1; i <= number; i++) {
+      //     console.log(n1);
+      //     nextTerm = n1 + n2;
+      //     n1 = n2;
+      //     n2 = nextTerm;
+      // }
+
+      // program to generate fibonacci series up to n terms
+
+      // take input from the user
+      // const number = parseInt(prompt('Enter the number of terms: '));
+      // var arr=[0 ,1];
+      // let n1 = arr.indexOf(0);
+      // let n2 = arr.indexOf(1);
+      // var n3=n1+n2;
+      // arr.push(n3)
+      // console.log(arr);
+
+      // for (let i = 1; i <= number; i++) {
+      //     console.log(n1);
+      //     nextTerm = n1 + n2;
+      //     n1 = n2;
+      //     n2 = nextTerm;
+      // }
+
+      // var arr=[0 ,1];
+      // var newarr=[];
+      // let n1 = arr.indexOf(0);
+      // let n2 = arr.indexOf(1);
+      // var n3=n1+n2;
+      // arr.push(n3);
+      // console.log(arr);
+
+      // for (let i = 1; i <= 12; i++) {
+      //     console.log(n1);
+      //     nextTerm = n1 + n2;
+      //     n1 = n2;
+      //     n2 = nextTerm;
+      // }
+
+      // function printfibo(n){
+      // var arr=[0,1];
+      // var newArr=[];
+      // var i=2;
+
+      // do{
+      //    arr[i]=arr[i-1]+arr[i-2];
+      //    newArr.push(arr[i]);
+      //     i++;
+      // }while(i<=11);
+      // return arr+newArr;
+
+      // }
+      // var x=printfibo(100);
+      // console.log(x);
+
+      // function printFibo(x){
+      //     var newarr=[];
+      // var arr=[0 ,1];
+      // let n1 = arr.indexOf(0);
+      // let n2 = arr.indexOf(1);
+      // var n3=n1+n2;
+      // arr.push(n3);
+
+      // for (let i = 1; i <= 12; i++) {
+      //     var t=newarr.push(n1)
+      //     nextTerm = n1 + n2;
+      //     n1 = n2;
+      //     n2 = nextTerm;
+      // }
+      // return x;
+      // }
+      // var pp=printFibo(12);
+      // console.log(pp);
+
+      // function printFibo(){
+
+      // var newarr=[];
+      // var arr=[0 ,1];
+
+      // do{
+      //     let n1 = arr.indexOf(0);
+      //     let n2 = arr.indexOf(1);
+      //     var sum=n1+n2;
+      //     if(sum>100){
+
+      //     }
+      //     console.log(arr);
+      // }
+
+      // while();
+
+      //  }();
+
+      //  function printFibo(){
+      //     arr=[0,1];
+      //  }
+
+      // function printFibo(){
+      //     var arr=[0,1];
+      //     var proce
+      // }
+
+      // console.log(5%2);
+      // debugger;
+      // function solve(arr, rotations){
+      // if(rotations == 0) return arr;
+      // for(let i = 0; i < rotations; i++){
+      //  let element = arr.pop();
+      //  arr.unshift(element);
+      //  }
+      // return arr;
+      // }
+      //  var t=solve([44, 1, 22, 111],1);
+      //  console.log(t);
+
+      //   function sum(arr, rotation) {
+      //     if (rotation == 0) {
+      //       return arr;
+      //     } else {
+      //       for (i = 0; i < rotation; i++) {
+      //         let element = arr.pop();
+      //         arr.unshift(element);
+      //       }
+      //     }
+      //     return arr;
+      //   }
+      //   let p = sum([2, 3, 4, 5, 6, 7, 9], 0);
+      //   console.log(p);
+
+      //  function reverseNum(num) {
+      //  var reverse = 0;
+      //  while(num != 0){
+      //  reverse = reverse * 10;
+      //  reverse = reverse + num%10;
+      //  num = Math.trunc(num/10); // Remove decimal places
+      //  }
+      //  return reverse;
+      // }
+      // console.log(reverseNum(123)) //321
+      // console.log(reverseNum(5872)) //2785
+
+      // function countVowel(str) {
+      //  var count = 0;
+      //  str=str.toLowerCase();
+      //  for(var i=0;i<str.length;i++){
+
+      //  if(str.charAt(i)=="a"||str.charAt(i)=="e"||str.charAt(i)=="i"||
+      //  str.charAt(i)=="o"||str.charAt(i)=="u"){
+      //  count++; //Increment vowel count
+
+      //  }
+      //  }
+      //  return count;
+      // }
+      // console.log(countVowel("Hello")) //2
+      // console.log(countVowel("Umbrella")) //3
+
+      // var str="sachin";
+      // function num(str){
+      // var count=0;
+      // for(i=0;i<str.length;i++){
+      //     if(str.charAt(i)=="a"||str.charAt(i)=="e"||str.charAt(i)=="i"||
+      //       str.charAt(i)=="o"||str.charAt(i)=="u"){
+      // count++;
+      // }
+      // }
+      // var s=str.charAt(0);
+      // console.log(count);
+      // }num("sachin");
+
+      // var arr=[2 ,4 , 6, 8, 3, 5 , 7 ];
+      //  var s=   arr.reduce(mul);
+      //  console.log(s);
+
+      //  function mul(currentvalue , nextvalue){
+      //  return currentvalue + nextvalue;
+      //  }
+
+      //   var arr = [
+      //     [1, 2, 3],
+      //     [4, 5, 6],
+      //     [7, 8, 9],
+      //   ];
+      //   var s = arr.reduce(flattenArr);
+      //   console.log(s);
+
+      //   function flattenArr(array, inarray) {
+      //     return array.concat(inarray);
+      //   }
+
+      // function findPalindrome (str) {
+      //  for(var i=0;i<str.length;i++){
+
+      //  if(str.charAt(i)!=str.charAt(str.length-i-1)){
+      //  return false;
+      //  }
+      //  }
+      //  return true;
+      // }
+      // console.log(findPalindrome("bannana")) //false
+      // console.log(findPalindrome("racecar")) //true
+      // console.log(findPalindrome("madam")) //true
+
+      // function simpleInt(principle, rate, time) {
+
+      //  var finalAmt=principle*time*rate/100;
+      //  return finalAmt;
+      // }
+      // console.log(simpleInt(20000,6,5)) //220000
+      // // console.log(simpleInt(150000,25,1)) //3900000
+
+      // function getFactorial(num) {
+      //  if(num==1){
+      //  return 1; // Termination condition
+      //  }
+      //  if(num==0 || num<0){
+      //  return 0; // Termination condition
+      //  }
+      //  return num*getFactorial(num-1);
+      // }
+      // // console.log(getFactorial(5)) // 120
+      // // console.log(getFactorial(12)) // 479001600
+
+      // var num=4;
+      // console.log(num*getFactorial(num-1));
+
+      // var arr=[2,4 ,2 ,4 ,33 , 4,];
+      // var newarr=[];
+      // arr.forEach(num);
+      // function num(number){
+      //     var t=number*2;
+      //     newarr.push(t);
+      // }
+      // console.log(newarr);
+
+      // function printFibo(num){
+      //     var arr=[0,1];
+      //     var proceed=true;
+      //     do{
+      //         var last=arr[arr.length-1];
+      //         var second=arr[arr.length  -2];
+      //         var sum=(last+second);
+      //         if(sum>num){
+      //             proceed=false;
+      //         }else{
+      //            arr.push(sum);
+      //         }
+
+      //         }while(proceed==true);
+      //         return arr;
+      //         }
+      //     var s=printFibo(144);
+      //     console.log(s);
+
+      // function getFactorial(num) {
+      //  if(num==1){
+      //  return 1; // Termination condition
+      //  }
+      //  if(num==0 || num<0){
+      //  return 0; // Termination condition
+      //  }
+      //  return num*getFactorial(num-1);
+      // }
+      // console.log(getFactorial(8)) // 120
+      // console.log(getFactorial(12)) // 479001600
+
+      // function sum(num){
+      //   return sum.reduce((num1 , num2)=> num1+num2);
+
+      // }
+      // console.log(sum(2 ,3,4));
+
+      // function addNumber(num) {
+      //  return num.reduce((arpan,sachin) => arpan+sachin);
+      // }
+      // console.log(addNumber(2,4,5)) // 11
+      // console.log(addNumber(10,45,34,130)) //219
+
+      // function addArrays(...args) {
+      // return args.reduce((total,arr)=>total.concat(arr));
+      // }
+      // console.log(addArrays([2,3,4],[6,4,9],[34,6,4]))
+      // // [2, 3, 4, 6, 4, 9, 34, 6, 4]
+
+      // function letterCount(str, c) {
+      //  var count=0;
+      //  str=str.toLowerCase(); //Case insensitive
+      //  for(var i=0;i<str.length;i++){
+      //  if(str.charAt(i)==c){
+      //  count++; //Increment count
+      //  }
+      //  }
+      //  return count;
+      // }
+      // console.log(letterCount("Connect",'c')) // 2
+      // console.log(letterCount("first person",'s')) // 2
+
+      // function letterCount(str, c){
+      //      var count =0;
+      //      for(i=0;i<str.length;i++){
+      //       if(str.charAt(i)==c){
+      //       count++;
+      //       }
+      //      }
+      //      return count;
+      //     }
+      //     console.log(letterCount("Connect","c")) // 2
+
+      // function checkPrime(num, div=2) {
+
+      //  // Base case
+      //  if (num <= 2){
+      //  return (num == 2) ? true : false;
+      //  }
+      //  // No Divisor case
+      //  if (div * div > num){
+      //  return true;
+      //  }
+
+      //  // Number is not prime if divisible
+      //  if (num % div == 0){
+      //  return false;
+      //  }
+      //  // Recursive call with next divisor
+      //  return checkPrime(num, div+1);
+      // }
+      // console.log(checkPrime(27)) // false
+      // // console.log(checkPrime(19)) // true
+
+      // function greet(time, name) {
+      //  console.log(`Good ${time}, ${name}`)
+      // }
+      // greet('morning', 'Alice')
+
+      // function average(x, y) {
+      //  return (x + y) / 2;
+      // }
+      // console.log(average(10, -4)); // 3
+      // average(2.5, 8) // 5.25
+
+      // function triple(x) {
+      //  return x + x + x ;
+      // }
+      // console.log(triple(8)); // 24
+      // console.log(triple("ho ")) // "ho ho ho
+
+      // function even(x) {
+      //  return x % 2 == 0;
+      // }
+      // console.log(even(-8))// true
+      // console.log(even(27)); // fals
+
+      // function divides(x, y) {
+      //  return y % x === 0
+      // }
+      // console.log(divides(5, 20)); // true
+      // divides(2, 17) // fals
+
+      // function isLeapYear(y) {
+      //  return divides(4, y) && !divides(100, y) || divides(400, y)
+      // }
+      // console.log(isLeapYear(1963)); // false
+      // isLeapYear(1968) // true
+      // isLeapYear(2000) // true
+      // isLeapYear(2100) // false
+      // isLeapYear(2200) // false
+      // isLeapYear(2399) // false
+      // isLeapYear(2400) // true
+      // isLeapYear(9204) // false
+      // isLeapYear(9000) // true
+
+      // function halfOf(x) {
+      //  return x / 2
+      // }
+      // console.log(halfOf(-8)); // -4
+      // halfOf(27)
+
+      // function isLongerThan(s, n) {
+      //  return s.length > n
+      // }
+      // isLongerThan("sos", 2) // true
+      // isLongerThan("sos", 3) // false
+
+      // function salePrice(originalPrice, discountPercent) {
+      //  return originalPrice - (originalPrice * discountPercent / 100.0)
+      // }
+      // salePrice(200, 10) // 180
+      // salePrice(157.95, 15) // 134.2575
+      // salePrice(157.95, 100) // 0
+
+      // function circleArea(radius) {
+      //  return Math.PI * radius * radius
+      // }
+      // circleArea(3) // 28.274333882308138
+      // circleArea(1.492705) // 6.999996901568007
+      // //Math.PI=22/7
+
+      // function sum(a) {
+      //  let result = 0
+      //  for (let x of a) {
+      //  result += x
+      //  }
+      //  return result
+      // }
+      // sum([]) // 0
+      // sum([8]) // 8
+      // sum([3, 9, 5, -2]) // 15
+
+      // function average(a) {
+      //  return sum(a) / a.length
+      // }
+      // console.log(average([3, 9, 5, -2])); // 3.75
+      // average([8]) // 8
+      // average([]) // NaN, but should it be???
+
+      // function lfc(myname){
+      // console.log(10+"lfc" +12);
+      // }
+      // res=lfc(10);
+      // console.log(res); //line 5
+
+      // thisfun=function lfc(x){
+      // console.log(x*x);
+      // }
+
+      // function password(pass) {
+      // for (i = 0; i < pass.length; i++) {
+      // }
+      // }
+      // function name(pname) {
+      //   for (i = 0; i < pname.length; i++) {
+      //   }
+      //   console.log("The value of i is "+i);
+      // }
+      // password("54321");
+      // name("John");
+
+      // let chaval= (p)=>p+2;
+      // console.log(chaval(2));
+
+      // num1=5;
+      // function cal() {
+      // num1=10;
+      // num2=5;
+      // num3=num2*num1;
+      // console.log(num3);
+      // }
+      // cal();
+
+      // function message() {
+      // var name = "Bench";
+      // alert(name);
+      // }message();
+
+      // function sum(a,b){
+      //   return a+b;
+      // }
+      // function mul(y,z){
+      //   return y*z;
+      // }
+      // // var c=sum(3,6);
+      // var t=mul(sum(3,6),2)
+      // console.log(t);
+
+      // function calculate(a,b,fn) {
+      //   debugger
+      //       var c = a * 3 + b + fn(a,b);
+      //       return  c;
+      //     }
+
+      //     function sum(a,b) {
+      //       return a+b;
+      //     }
+
+      //     function product(a,b) {
+      //       return a*b;
+      //     }
+
+      //     document.write(calculate (10,20,sum)); //80
+      //     document.write(calculate (10,20,product)); //250
+
+      // var arr = [[1,3,4,3],"b","c"];
+      //     var s=(a,b) =>a*b;
+      // console.log(s(3,4));
+
+      // var arr = [1,2,3,4,5,6];
+      // arr.forEach(function(val){
+      //    console.log(val+5);
+      // });
+
+      // function test_prime(n) {
+      //     if (n === 1) {
+      //         return false;
+      //     }
+      //     else if (n === 2) {
+      //         return true;
+      //     } else {
+      //         for (var x = 2; x < n; x++) {
+      //             if (n % x === 0) {
+      //                 return false;
+      //             }
+      //         }
+      //         return true;
+      //     }
+      // }
+      // console.log(test_prime(37));
+
+      //    function factorial(n){
+      //    let answer = 1;
+
+      //    if (n == 0 || n == 1){
+      //     return answer;
+      //    }else{
+      //     for(var i = n; i >= 1; i--){
+      //       answer = answer * i;
+      //     }
+      //     return answer;
+      //    }
+      //     }
+      // let n =3 ;
+      //  value = factorial(n)
+      // console.log("The factorial of " + n + " is " + value);
+
+      // function factorial(n){
+      // if(n==0){
+      //  return result;
+      //   // }
+      // var result=1;
+      // for(i=n;i>=1;i--){
+      // result=result*i;
+      // }
+      // return result;
+      // }
+      // console.log(factorial(7));
+
+      // PRIME NUMBER
+      // for (i = 0; i <= 100; i++) {
+      //   var count = 0;
+      //   for (div = 2; div * div <= i; div++) {
+      //     if (i % div == 0) {
+      //       count++;
+      //       break;
+      //     }
+      //   }
+      //   if (count == 0) {
+      //     console.log(i);
+      //   }
+      // }
+
+      //     for(i=1;i<=100;i++){
+      //     var count=0;
+      //     for(div=2;div*div<=i;div++){
+      //     if(i%div==0){
+      //       count++;
+      //       break;
+      //     }
+      //     }
+      //  if(count==0){
+      //   console.log(i);
+      //  }
+
+      //     }
+
+      // 30-08-2022
+      // for(i=0;i<5;i++){
+      //   for(j=0;j<=i;j++){
+      //     document.write("*");
+      //   }
+      //   document.write("<br>");
+      // }
+
+      // var no=5;
+      // for(i=0;i<=5;i++){
+      // for(j=0;j<no;j++){
+      // document.write("*");
+      //   }
+      //   no--;
+      //   document.write("<br>");
+      // }
+
+      // var nst = 1;
+      // var nsp = 4;
+      // for (i = 0; i < 5; i++) {
+      //   for (j = 0; j < nsp; j++) {
+      //     document.write("&nbsp");
+      //   }
+      //   for (k = 1; k <= nst; k++) {
+      //     document.write("*");
+      //   }
+      //   document.write("<br>");
+      //   nsp--;
+      //   nst++;
+      // }
+
+      //  var nsp=0;
+      //  var nst=5;
+      // for(i=0;i<5;i++){
+      //   debugger;
+      //  for(j=0;j<nsp;j++){
+      //   document.write("&nbsp");
+      //  }
+      //  for(j=0;j<nst;j++){
+      //   document.write("*");
+      //  }
+      //  document.write("<br>");
+      //  nst--;
+      //  nsp++;
+      // }
+
+      //  var n=5;
+      // var nsp=5/2;
+      // var nst=1;
+      // for(i=0;i<n;i++){
+      //   for(j=0;j<nsp;j++){
+      //      document.write("&nbsp");
+      //     console.log("&nbsp");
+      //   }
+      //   for(k=0;k<nst;k++){
+      //     document.write("*");
+      //     console.log("*");
+      //   }
+      //   if(i<=n/2-1){
+      //     nsp=nsp-2;
+      //     nst=nst+2;
+      //   }else{
+      //     nsp=nsp+2;
+      //     nst=nst-2;
+      //   }
+      //   document.write("<br>");
+      //   console.log("<br>");
+      // }
+
+      // var nsp=0;
+      // var nst=1;
+
+      // for(i=0;i<=5;i++){
+      //   debugger;
+      //   for(j=0;j<nsp;j++){
+      //      document.write("&nbsp");
+      //   }
+      //   for(k=0;k<nst;k++){
+      //     document.write("*");
+      //   }
+
+      //   document.write("<br>");
+      //      nsp++;
+      // }
+
+      // var a= Number(prompt("Enter A number"));
+      // var b= Number(prompt("Enter B number"));
+      // let sum=a+b;
+      // alert(sum);
+
+      //   const array1 = ['a', 'b', 'c'];
+
+      //   for (var element of array1){
+      //    console.log(element);
+      //  }
+
+      // var arr=[2,3,4,5,6,7,8,9];
+      // for(let element of arr){
+      // console.log(element);
+      // }
+
+      //  var arr=[1,2,3,4,5,6,7,8,9];
+      //   for(let element of arr){
+      //  console.log(element);
+      //  }
+
+      // var s={
+      //   name:"sachin",
+      //   roll:123456,
+      //   age:21,
+      // }
+      // for(let value in s){
+      //   console.log(value + ":" + s[value] );
+      // }
+
+      // var r = {
+      //   name: "shashank",
+      //   age: 21,
+      //   roll: 1723,
+      // };
+
+      // for (let a in r){
+      //   console.log(a + ":" + r[a]);
+      // }
+      // var i=1;
+      // while(i<=10){
+      //  console.log(i*2);
+      //  i++;
+      // }
+
+      // var i=1;
+      // do{
+      //   console.log("hello");
+      //   i++;
+      // }while(i<=10);
+
+      // var name="sachinkumar";
+      // for(let s of name){
+      //   console.log(s);
+      // }
+
+      // debugger;
+      //  for(i=1;i<=100;i++){
+      //   var count=0;
+      //   for(div=2;div*div<=i;div++){
+      //     if(i%div==0){
+      //       count++;
+      //       break;
+      //     }
+      //   }
+      //   if(count==0){
+      //     console.log(i);
+      //     // document.write(i);
+      //   }
+      //  }
+
+      // there are 0 spaces in first row
+      // var n = 7;
+      // var sp = 0;
+      // var st = n;
+      // for (i = 1; i <= n; i++) {
+      //   for (
+      //     j = 1;
+      //     j <= sp;
+      //     j++ // for printing spaces
+      //   ) {
+      //     document.write("&nbsp");
+      //   }
+
+      //   for (j = 1; j <= st; j++) {
+      //     document.write("*");
+      //   }
+
+      //   if (i <= n / 2) {
+      //     st -= 2;
+      //     sp++;
+      //   } else {
+      //     st += 2;
+      //     sp--;
+      //   }
+
+      //   document.write("<br>");
+      // }
+
+      // for (i = 1; i <= 20; i=i+4) {
+      //   for (j = i; j <= i+4; j++) {
+      //     document.write(j);
+      //   }
+      //   document.write("<br>");
+      // }
+      //  debugger;
+
+      // const myMatrix = [];
+      // const rows = 5;
+      // const columns = 3;
+
+      // for (var i = 0; i < rows; i++) {
+      //   myMatrix[i] = [i];
+      //   for (var j = 0; j < columns; j++) {
+      //     myMatrix[i][j] = [i+j];
+      //     // document.write("<br>");
+      //   }
+
+      // }
+
+      // // console.log(myMatrix);
+      // document.write(myMatrix);
+
+      // for(var i=1;i<=16;i+3){
+      //   for(j=i;j<=j+3;j++){
+      //     document.write(j+"*");
+      //   }
+      //   document.write("&nbsp");
+      // }
+
+      // for (var a = 1; a <= 20; a+4) {
+      //   for (var b = a; b < a + 4; b++) {
+      //     document.write(b+ " ");
+      //   }
+      //   document.write("<br>");
+      // }
+      //  function sachin(p){
+
+      //    for(var a=1; a<=20; a= a+4){
+      //          for(var b=a; b < a+5; b++){
+      //              //document.write(b);
+      //              var s=b;
+      //              return b;
+      //          }
+      //          document.write("<br>");
+      //      }
+      //  }var t=sachin(1);
+      //  document.write(b);
+      //   var n=7;
+      // for (i = 1; i <= n; i++) {
+      //   for (j = 0; j <= n; j++) {
+      //    if(i==j || i+j==n+1){
+      //      document.write("😒");
+      //    }else{
+      //     document.write("&nbsp");
+
+      //    }
+      //   }
+      //   document.write("<br>");
+      // }
+      // debugger;
+      // var n = 7;
+      // var nsp = 2;
+      // var nst = 1;
+      // for (i = 0; i < n; i++) {
+      //   for (j = 0; j < nsp; j++) {
+      //     document.write("&nbsp");
+      //   }
+      //   for (k = 0; k < nst; k++) {
+      //     document.write("*");
+      //   }
+      //   document.write("<br>");
+      //   if (i <= n / 2 - 1) {
+      //     nsp--;
+      //     nst = nst + 2;
+      //   } else {
+      //     nsp++;
+      //     nst = nst - 2;
+      //   }
+      // }
+
+      // var a = [
+      //   [1, 2, 3],
+      //   [5, 6, 7],
+      // ];
+
+      // for (i = 0; i < a.length; i++) {
+      //   for (j = 0; j < a[i].length; j++) {
+      //     document.write(a[i][j]);
+      //     console.log(a[i][j]);
+      //   }
+      //   document.write("<br>");
+      // }
+
+      // var obj={
+      //   name:"abc",
+      //   class:"2nd",
+      //   rollNo:1,
+      // }
+
+      // for(let key in obj){
+      //   console.log(key);
+      // }
+
+      // var a=[[my],[name],[is], [abc]];
+
+      //       function cToF(celsius)
+      // {
+      //   var cTemp = celsius;
+      //   var cToFahr = cTemp * 9 / 5 + 32;
+      //   var message = cTemp+'\xB0C is ' + cToFahr + ' \xB0F.';
+      //     console.log(message);
+      // }
+
+      // function fToC(fahrenheit)
+      // {
+      //   var fTemp = fahrenheit;
+      //   var fToCel = (fTemp - 32) * 5 / 9;
+      //   var message = fTemp+'\xB0F is ' + fToCel + '\xB0C.';
+      //     console.log(message);
+      // }
+      // cToF(60);
+      // fToC(45);
+      // (9/5 × °C) + 32
+
+      // var fTemp = fahrenheit;
+      //   var fToCel = (fTemp - 32) * 5 / 9;
+      //   var message = fTemp+'\xB0F is ' + fToCel + '\xB0C.';
+      //     console.log(message);
+
+      // function convertTocelsious(faran) {
+      //   var degree = (5 / 9) * (faran - 32);
+      //   return degree;
+      // }
+      // var s = convertTocelsious(200);
+      // console.log(s);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="stop()">stop</button>
+    <script>
+        // localStorage.setItem("name" , "ankur");
+        // var s=localStorage.getItem("sachin");
+        // console.log(s);
+        // sessionStorage.setItem("name" , "sachin");
+        // var stu={
+        //     name:"sachin",
+        //     age:100,
+        //     city:"asr",
+        //     marks:90,
+        // }
+        // var s=JSON.stringify(stu);
+        // localStorage.setItem("s1",s);
+
+        // var data=localStorage.getItem("s1");
+        // var s1=JSON.parse(data);
+        // console.log(s);
+
+        // setTimeout(() => {
+        //       console.log("hello");
+        // }, 100);
+        // console.log("sachin");
+
+    //   function hello() {
+    //           console.log("hello");
+    //     }
+    //     setTimeout(hello,0);
+    //     console.log("sachin");
+
+    // function hello() {
+    //           console.log("hello");
+    //     }
+    //     setTimeout(hello,0);
+    //     console.log("sachin");
+        function stop(){
+        clearInterval(s);
+        }
+       var s=setInterval(()=>{
+        console.log(new Date());
+       },1000);
+    //   console.log(newda);
+
+
+
+    </script>
+</body>
+</html>

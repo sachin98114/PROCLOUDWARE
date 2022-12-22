@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //  console.log(a);
+      //  var a
+      //  a=10;
+      //  console.log(a);
+      //  a=20;
+      //  console.log(a);
+
+      // function myfun(a ,b){
+
+      //        return a*a;
+      // }
+      // console.log(myfun(10 ,20));
+
+      //   var s={
+      //     name:"procloud",
+      //     pan: "x42abc",
+      //     loc :"",
+      //   }
+
+      //   for (var key in s) {
+      //     if(s[key]===""){
+      //        delete s[key];
+      //     }
+      // }
+      // console.log(s);
+
+      // var a=-2;
+      // var b=-3;
+      // var c=-5;
+      // var d=0;
+      // var e=-6;
+
+      //  console.log(Math.max(-2 ,-3, -5, 0, -6));
+      //  console.log(Math.min(-2 ,-3, -5, 0, -6));
+
+      // var a=-6;
+      // var b=-2;
+      // var c=-3;
+      // debugger
+      // if(a>b && a>c && b>c ){
+      //     console.log(c,b,a);
+
+      // }else if(b>a && b>c && c>a){
+      //     console.log(b,a,c);
+
+      // }else if(c>a && c>b && b>a){
+
+      //      console.log(a, b,c);
+
+      // }
+
+      // var x=0;
+      // var y=-1;
+      // var z=4;
+      // if(x>y && x>z){
+      //     if(y>z){
+      //         console.log(x , y, z);
+      //     }else{
+      //         console.log(x , z, y);
+
+      //     }
+      // }
+      // else if(y>x && y>z){
+      //     if(x>z){
+      //         console.log( z,x, y);
+
+      //     }
+      //     console.log( y, z,x);
+
+      // }else if(z > x && z>y){
+      //     if(x>y){
+
+      //     }
+      // }
+
+      // var today="05-09-2022T04:22"
+
+      // var s=today.split("T").concat(":00").join("");
+
+      // // var w=s.splice(today[today.length], 0, 'Feb');
+
+      // console.log(s);
+
+      // var stu=[
+      //     {
+      //           name:"saurav",
+      //           job:"IT",
+      //           sport:"Cricket",
+      //           id:3,
+
+      //     },
+      //     {
+      //         name:"Manish",
+      //           job:"IT",
+      //           sport:"Basket",
+      //           id:2,
+
+      //     },
+      //     {
+      //         name:"sushant",
+      //           job:"IT",
+      //           sport:"Badminton",
+      //           id:1,
+      //     }
+      //     ,
+      //     {
+      //         name:"sushant",
+      //           job:"IT",
+      //           sport:"Badminton",
+      //           id:1,
+      //     }
+      // ]
+
+      // for(i=0;i<=stu.length;i++){
+      //     if(stu[i].sport=="Badminton"){
+      //         console.log(stu[i].name);
+
+      //     }
+      // }
+
+      // stu = stu.filter((obj)=>{
+      //     if(obj.sport=="Badminton"){
+      //         console.log(obj.name)
+      //     }
+      // })
+
+      // var s = stu.filter((o)=> o.sport=="Badminton")
+      // .map((p) => p.name)
+
+      // console.log(s);
+
+      // var arr= new Array(1,2,3,4,5);
+      // console.log(arr);
+      //    stu.forEach((i ,j, k) =>{
+      //     console.log(i)
+      //     console.log(j)
+      //     console.log(k)
+
+      //    });
+
+      // var procloud = [
+      //   {
+      //     id: 1,
+      //     dept: "Training",
+      //   },
+      //   {
+      //     id: 2,
+      //     dept: "HR",
+      //   },
+      //   {
+      //     id: 3,
+      //     dept: "Admin",
+      //   },
+      //   {
+      //     id: 4,
+      //     dept: "Training",
+      //   },
+      // ];
+
+      // var Training = [];
+      // var HR = [];
+      // var Admin = [];
+
+      // for (i = 0; i < procloud.length; i++) {
+      //   if (procloud[i].dept == "Training") {
+      //     Training.push(procloud[i]);
+      //     if(Training.length>1){
+      //       Training.pop();
+      //     }
+      //   } else if (procloud[i].dept == "HR") {
+      //     HR.push(procloud[i]);
+      //   } else if (procloud[i].dept == "Admin") {
+      //     Admin.push(procloud[i]);
+      //   }
+      // }
+      // console.log(Training);
+      // console.log(HR);
+      // console.log(Admin);
+
+      // var procloud = [
+      //   {
+      //     id: 1,
+      //     dept: "Training",
+      //   },
+      //   {
+      //     id: 2,
+      //     dept: "HR",
+      //   },
+      //   {
+      //     id: 3,
+      //     dept: "Admin",
+      //   },
+      //   {
+      //     id: 1,
+      //     dept: "Training",
+      //   },
+      // ];
+
+      // var Training = [];
+      // var HR = [];
+      // var Admin = [];
+
+      // for (i = 0; i < procloud.length; i++) {
+      //   if (procloud[i].id == 1) {
+      //     Training.push(procloud[i]);
+      //     if (Training.length > 1) {
+      //       Training.pop();
+      //     }
+      //   } else if (procloud[i].dept == "HR") {
+      //     HR.push(procloud[i]);
+      //   } else if (procloud[i].dept == "Admin") {
+      //     Admin.push(procloud[i]);
+      //   }
+      // }
+      // console.log(Training);
+      // console.log(HR);
+      // console.log(Admin);
+
+      // var arr = ["apple", "mango", "apple", "orange", "mango", "mango"];
+
+      // function removeDuplicates(procloud) {
+      //   return procloud.filter((item, index) => arr.indexOf(item) === index);
+      // }
+
+      // console.log(removeDuplicates(procloud));
+      // console.log(procloud);
+
+      // const uniqueIds = [];
+
+      // const unique = arr.filter((element) => {
+      //   //  console.log(element);
+
+      //   const isDuplicate = uniqueIds.includes(element.id);
+      //   console.log(isDuplicate);
+
+      //   if (!isDuplicate) {
+      //     uniqueIds.push(element.id);
+
+      //     return true;
+      //   }
+
+      //   return false;
+      // });
+
+      // console.log(unique);
+      var arr = [
+        {
+          id: 1,
+          dept: "Training",
+        },
+        {
+          id: 2,
+          dept: "HR",
+        },
+        {
+          id: 3,
+          dept: "Admin",
+        },
+        {
+          id: 1,
+          dept: "Training",
+        },
+      ];
+
+      // var duplicate=arr.includes(arr[1].id);
+      // console.log(duplicate);
+
+      var emptyarr = [];
+      var anarr = arr.filter((value) => {
+      // console.log(value);
+      var duplicate = emptyarr.includes(value.id);
+      // console.log(duplicate);
+
+      emptyarr.push(value.id);
+      if (!duplicate) {
+            return true;
+          }
+           return false;
+      });
+       console.log(anarr);
+
+      //    var emptyarr=[];
+      //  for(i=0;i<arr.length;i++){
+      //   var anarr=emptyarr.includes(arr[i].id);
+      //    if(anarr!=true){
+      //     emptyarr.push(arr[i]);
+      //    }
+      //   }
+      //   console.log(emptyarr);
+    </script>
+  </body>
+</html>

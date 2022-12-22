@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 40%;
+      }
+
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .container {
+        padding: 2px 16px;
+      }
+    </style> */
+  </head>
+  <body>
+    <h2>Card</h2>
+
+    <div class="card">
+      <img src="img_avatar.png" alt="Avatar" style="width: 100%" id="photo" />
+      <div class="container">
+        <h4 id="p"><b>NAME :</b></h4>
+        <p>Architect & Engineer</p>
+      </div>
+    </div>
+
+    <input type="text" id="fname" />
+    <button onclick="get()">GET</button>
+    <div id="ptag"></div>
+
+    <script>
+        var val = document.getElementById("fname");
+        
+        function get() {
+            for (i = 0; i < val.value; i++) {
+                const url = `https://reqres.in/api/users?page=${i}`;
+                fetch(url, {
+                    method: "GET",
+                })
+                .then((response) => response.json())
+                .then((val) => {
+                    val.data.forEach((value) => {
+                        const node4 = document.getElementById("photo");
+                        node4.src = value.avatar;
+                        // console.log(value);
+                        console.log(val);
+
+
+                // const node1 = document.getElementById("p");
+                //  const textnode2 = document.createTextNode(value.first_name);
+                // node1.appendChild(textnode2);
+                // document.getElementById("ptag").appendChild(node1);
+
+
+                // const node2 = document.getElementById("p");
+                // const textnode2 = document.createTextNode(
+                //   "firstName :" + value.first_name
+                // );
+                // node.appendChild(textnode1);
+                // document.getElementById("ptag").appendChild(node1);
+                    });
+                });
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //    ///////////2 ND PAGE GET//////////
+    //   var val = document.getElementById("fname");
+
+    //   function get() {
+    //     const url = `https://reqres.in/api/users?page${val.value}`;
+    //     fetch(url, {
+    //       method: "GET",
+    //     })
+    //       .then((response) => response.json())
+    //       .then((val) => console.log(value));
+    //   }
+    </script>
+  </body>
+</html>

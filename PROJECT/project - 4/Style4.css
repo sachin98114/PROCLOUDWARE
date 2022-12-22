@@ -1,0 +1,199 @@
+.divider12{
+    float: right;
+    float: left;
+    height: 260px;
+}
+ .lastlorem{
+   justify-content: center;
+   align-items: center;
+   margin-left: 100px;
+}
+
+.submitlast{
+background-color: blue;
+}
+
+.footer4{
+   color: blue;
+    background-color: lightblue;
+    margin-left: 2px;
+    width: 30%;
+}
+.footer3{
+   color: blue;
+   background-color: lightblue;
+   margin-left: 2px;
+   width: 20%;
+   
+}
+.footer2{
+   color: blue;
+   background-color: lightblue;
+   margin-left: 2px;
+   width: 20%;
+}
+.footer1{
+   background-color: lightblue;
+   margin-left: 2px;
+   width: 30%;
+}
+.advantage{
+   margin-left: 10px;
+   color: blue;
+}
+.footer1mobile{
+margin-top: 10px;
+   margin-left: 28px;
+   display: flex;  
+}
+.footer1tag{
+   margin-top: 10px;
+   margin-left: 28px;
+   justify-content: space-around;
+   
+}
+.search{
+margin-left: 28px; 
+}
+.footer{
+   display: flex;
+}
+
+.changeitem{
+    color: blue;
+    margin-right: 29px;
+}
+.lorem{
+    margin-top: -10%;
+    background-color: azure;
+
+}
+.c{
+    background-color: azure;
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+.rent1{
+    font-weight: bolder;
+    font-size:x-large ;
+    margin-right: px;
+    margin-top: -5px;
+}
+.four{
+    margin-left: auto;
+}
+.car1{
+    display: flex;
+    justify-content: space-between;
+}
+.car2{
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+}
+.threea{
+    display: flex;
+    list-style-type: none;
+}
+    .threeb{
+    display: flex;
+    list-style-type: none;
+    }
+    .threec{
+    display: flex;
+    list-style-type: none;
+}
+ .three1{
+
+/* display: flex; */
+list-style-type: none;
+}
+.son1{
+    width: 68%;
+    
+    /* padding: 35px; */
+    /* border: 2px solid chartreuse; */
+    /* display: flex; */
+}
+.son2{
+    width: 25%;
+    margin-left: 20px;
+    padding: 15px;
+    /* border: 2px solid chartreuse; */
+    /* background-color: aquamarine; */
+    /* background-image: url("images\adv_bg.jpg"); */
+}
+.main{
+    width: auto;
+    display: flex;
+    padding: 50px;
+    /* border: 2px solid chartreuse; */
+    background-image: url("images/bg-grad.gif");
+
+}
+.upper1{
+display: flex;
+padding-bottom: unset;
+
+/* text-align: center; */
+width: auto;
+/* margin-left: auto; */
+/* background-color: aqua; */
+}.advantage{
+margin-left: 30px;
+}
+div.us{
+margin-left: auto;
+}
+.srchtag{
+height: 8px;
+}
+.rent{
+margin-left: 90px;
+margin-top: -4px;
+font-size: medium;
+}
+.a{
+margin-top: auto;
+display: flex;
+list-style: none;
+justify-content: space-around;
+background-color: blanchedalmond;
+height: 30px;
+/* justify-content: center; */
+align-items: center;
+
+}
+.ate{
+
+/* height: 30px; */
+align-items: center;
+background-color: blue;
+
+}
+.b{
+display: flex;
+list-style: none;
+justify-content: space-evenly;
+/* background-color: blanchedalmond; */
+height: 30px;
+/* justify-content: center; */
+align-items: center;
+/* background-color: aqua; */
+
+}
+.rate{
+
+height: 30px;
+background-color: mintcream;
+width: 2in;
+
+}
+.sate{
+height: 30px;
+background-color: blue;
+width: 3in;
+}
+

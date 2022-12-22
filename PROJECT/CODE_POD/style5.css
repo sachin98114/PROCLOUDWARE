@@ -1,0 +1,12 @@
+.fifth{
+    gap: 2rem;
+    /* margin-left: 0 auto; */
+    justify-content: space-around;
+    min-width: 8rem;
+    padding: 10px;
+    background-color: aliceblue;
+    margin: 0rem 5rem 5rem 5rem ;
+}
+.card-img{
+    height: 90px;
+}

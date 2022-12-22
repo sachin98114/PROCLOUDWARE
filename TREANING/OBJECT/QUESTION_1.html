@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .flex{
+            display: flex;
+        }
+    </style>
+  </head>
+  <body>
+<div class="flex">
+
+    
+    <button id="Next" onclick="fun()">Next</button>
+    <button id="Previous" onclick="gun()">Previous</button>
+    
+
+</div>
+    <script>
+    
+function compareName(a, b) {
+
+
+const name1 = a.fullName.toUpperCase();
+const name2 = b.fullName.toUpperCase();
+
+let comparison = 0;
+
+if (name1 > name2) {
+    comparison = 1;
+} else if (name1 < name2) {
+    comparison = -1;
+}
+return comparison;
+}
+
+const students =[
+    { firstName: "Joban", lastNmae: "singh", fullName: "Singh Joban" },
+    { firstName: "Munish", lastNmae: "sharma", fullName: "sharma Munish" },
+    { firstName: "Shajan", lastNmae: "Dhawan", fullName: " Dhawan Sajan" },
+    { firstName: "Dinesh", lastNmae: "Kapoor", fullName: "Kapoor Dinesh" },
+    { firstName: "sachin", lastNmae: "kumar", fullName: "kumar sachin" },
+  ];
+ 
+
+
+  function fun(){
+
+
+  var person=students.sort(compareName);
+  console.log(JSON.stringify(person));
+  for (var i = 0; i < person.length; i++) {
+      var object = person[i];
+      for (var property in object) {
+          var s=property + '=' + object[property];
+          document.write( s +"</br>");
+        }
+    }
+    
+}
+
+     function gun(){
+
+    
+    var per=students;
+    console.log(JSON.stringify(per));
+    for (var i = 0; i < per.length; i++) {
+    var object = per[i];
+    for (var property in object) {
+    var t=property + '=' + object[property];
+    document.write( t +"</br>");
+    
+}
+}
+}
+ 
+
+
+    </script>
+  </body>
+</html>

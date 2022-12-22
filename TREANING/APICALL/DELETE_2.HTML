@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="fname"  />
+    <button onclick="get()">GET</button>
+
+
+
+    <script>
+        var val = document.getElementById("fname");
+      
+        //    function get(){
+        //     // console.log("::VAL",val.value)
+        //     //https://reqres.in/api/users/2
+        //     const url=`https://reqres.in/api/users/${val.value}`;
+        //     fetch (url ,{
+        //         method:'DELETE'
+                
+        //     }).then((response) => response.json())
+        //     .then((data) => console.log(data));
+        // }
+
+        function get(){
+            // console.log("::VAL",val.value)
+            //https://reqres.in/api/users/2
+            const url=`https://reqres.in/api/users/${val.value}`;
+            fetch (url ,{
+                method:'DELETE'
+                
+            }).then((response) => response.json())
+            .then((data) => console.log(data));
+        }
+       
+       
+
+
+
+
+        
+    </script>
+</body>
+</html>

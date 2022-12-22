@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        body{
+            background-position: center;
+          
+        }
+        .container{
+            width: 360px;
+            height: 400px;
+            margin: 8% auto;
+            background: lightgrey;
+            position: relative;
+            overflow: hidden;
+        }
+        h3{
+            text-align: center;
+            margin-bottom: 40px;
+            color: red;
+        }
+        .container form{
+            width: 280px;
+            position: absolute;
+            top: 100px;;
+            left: 40px;
+
+        }
+        form input{
+            width: 100%;
+            padding: 10px 5px;
+        
+        }
+        .btn-box{
+            width: 100%;
+            margin: 30px auto;
+        }
+        form button{
+            width: 110px;
+            height: 35px;
+            margin: 0 10px;
+        }
+        #form2{
+            left: 450px;
+            z-index: 1;
+        }
+        #form3{
+            left: -450px;
+            z-index: 1;
+        }
+        .step-row{
+            width: 360px;
+            height: 40px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+
+        }
+        .step-col{
+            width: 120px;
+            text-align: center;
+            position: relative;
+        }
+        #progress{
+            position: absolute;
+            height: 100%;
+            width: 120px;
+        }
+        select{
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="form1" action="">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Age">
+            <div class="btn-box">
+                <button id="next1" type="button">Next</button>
+            </div>
+        </form>
+        <form id="form2" action="">
+            <h3>Address</h3>
+            <input type="text" name="" id="add" placeholder="Address">
+
+            <select name="" id="">
+                <option value="">State</option>
+                <option value="">Punjab</option>
+                <option value="">Bihar</option>
+            </select>
+            <select name="" id="">
+                <option value="">Country</option>
+                <option value="">India</option>
+                <option value="">England</option>
+            </select>
+            <div class="btn-box">
+                <button id="back1" type="button">prev</button>
+                <button id="next2" type="button">Next</button>
+            </div>
+        </form>
+        <form id="form3" action="">
+            <h3>Contact</h3>
+            <label for="">Mobile</label>
+            <input type="number" placeholder="mobilenumber">
+            <div class="btn-box">
+                <button id="back2" type="button">prev</button>
+                <button onclick="sub()" type="button">submit</button>
+            </div>
+        </form>
+        <div class="step-row">
+            <div id="progress"></div>
+<div class="step-col"><button>Backleft</button></div>
+<div onclick="add()"  class="step-col"><button>Address</button></div>
+<div onclick="con()"  class="step-col"><button>Contact</button></div>
+        </div>
+    </div>
+    <!-- scripting -->
+
+    <script>
+        var form1=document.getElementById("form1");
+        var form2=document.getElementById("form2");
+        var form3=document.getElementById("form3");
+
+        var next1=document.getElementById("next1");
+        var next2=document.getElementById("next2");
+        var back1=document.getElementById("back1");
+        var back2=document.getElementById("back2");
+        var progress=document.getElementById("progress");
+        
+        next1.onclick=function(){
+            form1.style.left="-450px";
+            form2.style.left="40px";
+            progress.style.width="240px"
+        }
+
+        back1.onclick=function(){
+            form1.style.left="40px";
+            form2.style.left="450px";
+            progress.style.width="120px"
+        }
+        next2.onclick=function(){
+            form2.style.left="-450px";
+            form3.style.left="40px";
+            progress.style.width="360px"
+        }
+        back2.onclick=function(){
+            form2.style.left="40px";
+            form3.style.left="450px";
+            progress.style.width="240px"
+        }
+        function sub(){
+            alert("Thanks for submitted")
+        }
+        function add(){
+            var x=document.getElementById("form1").style.display="none";           
+            form2.style.left="40px";
+            form3.style.left="450px";
+            progress.style.width="240px"
+
+        }
+        
+        function con(){
+            var x=document.getElementById("form1").style.display="none"; 
+            form2.style.left="-450px";
+            form3.style.left="40px";
+            progress.style.width="360px"
+        }
+
+    </script>
+
+</body>
+</html>

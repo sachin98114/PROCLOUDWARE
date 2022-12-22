@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Loop</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="duplicate.css">
+</head>
+
+<body>
+    <div id="parent">
+    <div id="page1" class="page1">
+        <div class="navbar">
+            <div class="flex1">
+                <div class="dropdown">
+                    <button class="dropbtn">Guitars
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Electric Guitar</a>
+                        <a href="#">Accustic Guitar</a>
+                        <a href="#">Classical Guitar</a>
+                    </div>
+                </div>
+                <a href="#Bass">Bass</a>
+                <a href="#Drums">Drums</a>
+                <a href="#Keyboads">Keyboads</a>
+                <a href="#Dj & Lighting">Dj & Lighting</a>
+                <a href="#Used Gear">Used Gear</a>
+                <a href="#Clearence">Clearence</a>
+            </div>
+        </div>
+    </div>
+    <!-- nav end here -->
+    <!-- form and nav end -->
+    <div id="second">
+    <div id="flex2">
+        <div>
+        <img id="imgsrc" src="main.jpg" alt="no" style="width:300px;height:300px"><br>
+    </div>
+    </div>
+    <div class="price">
+        <div>
+            <h3 id="price">$249.00</h3>
+            <p id="stock">true</p>
+        </div>
+    </div>
+    <div class="flex4">
+        <button id="slider-previous" onclick="prev()">Previous</button>
+        <button id="slider-next" onclick="next()"> next</button><br>
+    </div>
+    <div class="center">
+        <button id="collaspe1" type="button" class="btn btn-info" data-toggle="collapse"
+            data-target="#productinfo">productinfo</button><br>
+    </div>
+    <span id="productinfo" class="collapse">This are one of several Squier models available that offer a pretty good
+        product for a reasonably low price. The pick-ups and hardware are sometimes suspect, and the workmanship varies
+        from instrument to instrument, but for the price, these are a very good beginner guitar choice.</span>
+    <div class="center">
+        <button id="collaspe2" type="button" class="btn btn-info" data-toggle="collapse"
+            data-target="#shipping">Shippinginfo</button><br>
+    </div>
+    <span id="shipping" class="collapse">charges for shipping $20</span>
+    <div class="center">
+        <button id="collaspe3" type="button" class="btn btn-info" data-toggle="collapse"
+            data-target="#review">customer_reviews</button><br>
+    </div>
+    <span id="review" class="collapse">charges for shipping $20</span>
+    </section>
+</div>
+</div>
+<!-- page end -->
+    <div id="flex3">
+        <div id="qwer" class="col-md-8">
+            <div class="card-body">
+                <form>
+                    <label><b>FIRST NAME</b></label><br>
+                    <input type="text" name="message" id="user_input"><br>
+                    <label><b>LAST NAME</b></label><br>
+                    <input type="text" name="message" id="user"><br>
+                    <label><b>CC</b></label><br>
+                    <input type="text" name="message" id="userP"><br>
+                    <label><b>EMAIL</b></label><br>
+                    <input type="email" name="message" id="user_in">
+                </form>
+                <div class="info">
+                    <label>FIRST NAME: </label>
+                    <span id='display'></span><br>
+                    <label>LAST NAME: </label>
+                    <span id='dis'></span><br>
+                    <label>CC : </label>
+                    <span id='displ'></span><br>
+                    <label>EMAIL : </label>
+                    <span id='di'></span><br>
+                </div>
+                <input type="submit" onclick="showInput(),show(),sho(),sh();"><br />
+            </div>
+        </div>
+    </div>
+    <div class="buy">
+        <button id="buy" onclick="buy()">BUY</button>
+        <button id="bought" onclick="but()">BUY</button>
+    </div>
+    <button id="gohome" onclick="home()">GO TO HOME</button>
+    <!-- scripting -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+    <script src="duplicate.js"></script>
+
+</body>
+
+</html>
+   
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <Input id="one" type="text"></Input>
+    <button onclick="fun(event)">Click Me !</button>
+    <ul id="myList"></ul>
+     
+    <script>
+      var s=document.getElementById("one");
+      function fun(event){
+      const node = document.createElement("li");
+      const textnode = document.createTextNode(s.value); 
+      node.appendChild(textnode);
+      document.getElementById("myList").appendChild(node);
+      
+      const node1 = document.createElement("button");
+      node1.innerText="DELETE"; 
+      document.getElementById("myList").appendChild(node1);
+      node1.onclick=function(){
+      node.remove();
+      node1.remove();
+      node2.remove();
+    }
+      const node2 = document.createElement("button");
+      node2.innerText="EDIT"; 
+      document.getElementById("myList").appendChild(node2);
+      node2.onclick=function(){
+      s.value=textnode.value;
+       
+      }
+
+      
+      
+      s.value="";
+      }
+
+    </script>
+  </body>
+</html>

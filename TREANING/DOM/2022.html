@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .paje {
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#">
+      <div id="1st" class="paje">
+        <button>BackLeft</button>
+        <button>ADDRESS</button>
+        <button>AGE</button>
+        <br />
+        <br />
+        <br />
+        <label for="">NAME</label>
+        <input type="text" />
+        <br />
+        <br />
+        <label for=""> Age :</label>
+        <input type="text" />
+
+        <br /><br />
+      </div>
+      <div id="2nd" class="paje">
+        <h1 style="border: 2px solid green">ADDRESS</h1>
+        <br /><br />
+        <span>ADDRESS</span>
+        <input type="text" />
+        <br />
+        <br />
+        <select name="state" id="state">
+          <option value="">STATE</option>
+          <option value="">BIHAR</option>
+          <option value="">DELHI</option>
+          <option value="">PUNJAB</option>
+        </select>
+        <br />
+        <br />
+        <select name="con" id="con">
+          <option value="">Country</option>
+          <option value="">INDIA</option>
+          <option value="">USA</option>
+          <option value="">UAE</option>
+        </select>
+        <br /><br />
+      </div>
+      <div id="3rd" class="paje">
+        <h2>contact</h2>
+        <span>MOBLILE NO:</span>
+        <input type="Number" />
+      </div>
+      <button id="pre" onclick="pree()">pre</button>
+      <button>submit</button>
+      <button id="next" onclick="next()">next</button>
+    </form>
+
+    <script>
+        var first = document.getElementById("1st");
+        var second = document.getElementById("2nd");
+        var third = document.getElementById("3rd");
+      
+
+      let classes = document.getElementsByClassName("paje");
+    //   function nexte() {
+      // document.getElementById("myDIV").innerHTML="";
+      // var x = document.getElementById("fname");
+
+// var i=0;
+// do{
+//     if (i == 0) {
+//             first.style.display="block";
+//             second.style.display="none";
+//             third.style.display="none";
+//         //   console.log(classes[i]);
+//         }else if(i==1){
+//             first.style.display="none";
+//             second.style.display="block";
+//             third.style.display="none";
+//         //   console.log(classes[i]);
+//         }else if(i==2){
+//             first.style.display="none";
+//             second.style.display="none";
+//             third.style.display="block";
+//         //   console.log(classes[i]);
+//         } 
+//         // i++;        
+//         //debugger;
+//         function next(){
+//             debugger;
+//      //     i=i+1;
+//             console.log("hello");
+//         };
+//     }while( i < classes.length)
+
+      
+      for (i = 0; i < classes.length; i++) {
+        if (i == 0) {
+            first.style.display="block";
+            second.style.display="none";
+            third.style.display="none";
+          console.log(classes[i]);
+        }else if(i==1){
+            first.style.display="none";
+            second.style.display="block";
+            third.style.display="none";
+          console.log(classes[i]);
+        }else if(i==2){
+            first.style.display="none";
+            second.style.display="none";
+            third.style.display="block";
+          console.log(classes[i]);
+        }
+      }
+    //   }
+      // document.getElementById("myDIV").innerHTML="";
+      //   }
+      // console.log(page);
+    </script>
+  </body>
+</html>

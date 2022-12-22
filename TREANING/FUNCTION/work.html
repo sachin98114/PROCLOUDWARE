@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+function calculator(val) {
+  let c=val;
+  let first_digit=val%10;
+  let first_digit_2=val/10;
+        let a=first_digit;
+  let b=first_digit_2;
+//   console.log(Math.floor(b))
+//   console.log(a);
+
+
+  let second_digit_1=b%10;
+  let second_digit_2=b/10;
+ 
+      var b1=(Math.floor(second_digit_1));
+    //   console.log(b1);
+      let =b/10;
+
+      var b2=(Math.floor(second_digit_2));
+    //   console.log(b2);
+
+      let third_digit_1=b2%10;
+      let third_digit_2=b2/10;
+      var c2=(Math.floor(second_digit_2));
+    //   console.log(third_digit_1);
+      
+    var sum=a+b1+b2;
+    // console.log(sum);
+
+    var mul_1=a*b1;
+    var mul_2=mul_1*b2;
+    // console.log(mul_2);
+
+    var final=mul_2-sum;
+    console.log(final);
+
+  return c;
+}
+calculator(543);
+</script>
+</body>
+</html>

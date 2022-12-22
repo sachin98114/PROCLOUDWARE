@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 5px solid black;
+            width: 99%;
+            height: 40vh;
+
+        }
+        .child1{
+            border: 1px solid black;
+            background-color: blue;
+            width: 100px;
+            height: 20vh;
+            position: relative;
+           
+            
+
+        }
+        .child1{
+            border: 1px solid black;
+            background-color: red;
+            width: 100px;
+            height: 20vh;
+            position: relative;
+            /* margin-top: -20vh; */
+            z-index: -1;
+        }
+        p{
+ display: none;
+ /* visibility: hidden; */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, autem.</p>
+    </div>
+    
+</body>
+</html>

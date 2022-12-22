@@ -1,0 +1,16 @@
+.container-fluid4{
+    background-color: purple;
+}
+.wer{
+    
+    overflow-x: scroll;
+}
+.card{
+    min-width: 15em;
+    margin-right: 1rem;
+}
+.cardbottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
